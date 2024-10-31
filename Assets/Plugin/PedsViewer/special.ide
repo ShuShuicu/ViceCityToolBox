@@ -1,0 +1,49 @@
+objs
+1, player, player, 1, 300, 128
+2, player2, player2, 1, 300, 128
+3, player3, player3, 1, 300, 128
+4, player4, player4, 1, 300, 128
+5, player5, player5, 1, 300, 128
+6, player6, player6, 1, 300, 128
+7, player7, player7, 1, 300, 128
+8, player8, player8, 1, 300, 128
+9, player9, player9, 1, 300, 128
+10, play10, play10, 1, 300, 128
+11, play11, play11, 1, 300, 128
+12, play12, play12, 1, 300, 128
+13, cop, cop, 1, 300, 128
+14, swat, swat, 1, 300, 128
+15, fbi, fbi, 1, 300, 128
+16, army, army, 1, 300, 128
+17, medic, medic, 1, 300, 128
+18, fireman, fireman, 1, 300, 128
+19, male01, male01, 1, 300, 128
+20, CBa, CBa, 1, 300, 128
+21, CBb, CBb, 1, 300, 128
+22, HNa, HNa, 1, 300, 128
+23, HNb, HNb, 1, 300, 128
+24, SGa, SGa, 1, 300, 128
+25, SGb, SGb, 1, 300, 128
+26, CLa, CLa, 1, 300, 128
+27, CLb, CLb, 1, 300, 128
+28, GDa, GDa, 1, 300, 128
+29, GDb, GDb, 1, 300, 128
+30, BKa, BKa, 1, 300, 128
+31, BKb, BKb, 1, 300, 128
+32, PGa, PGa, 1, 300, 128
+33, PGb, PGb, 1, 300, 128
+34, vice1, vice1, 1, 300, 128
+35, vice2, vice2, 1, 300, 128
+36, vice3, vice3, 1, 300, 128
+37, vice4, vice4, 1, 300, 128
+38, vice5, vice5, 1, 300, 128
+39, vice6, vice6, 1, 300, 128
+40, vice7, vice7, 1, 300, 128
+41, vice8, vice8, 1, 300, 128
+end
+tobj
+end
+path
+end
+2dfx
+end

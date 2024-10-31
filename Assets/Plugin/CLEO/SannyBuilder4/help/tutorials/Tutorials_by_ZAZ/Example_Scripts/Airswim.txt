@@ -1,0 +1,89 @@
+{$CLEO .cs}
+:Airswim
+thread 'AIRSWIM'
+
+{
+press Backspace to start Airswim
+<go left key> to turn left
+<go right key> to turn right
+<forward key> to move forward
+<aim key> to increase height
+<enter/exit> to cancel Airswim
+}
+
+
+while true
+    wait 0
+    if
+        0256:   player $PLAYER_CHAR defined
+    then
+        if
+            0AB0:   key_pressed 8  // key Backspace
+        then
+            
+            repeat
+                wait 0
+                04ED: load_animation "SWIM" 
+            until 04EE:   animation "SWIM" loaded
+            
+            083C: set_actor $PLAYER_ACTOR velocity_in_direction_XYZ 0.0 0.0 50.0
+            wait  1000
+            0812: unknown_action_sequence $PLAYER_ACTOR "Swim_Breast" from_file "SWIM"  1.0  1  1  1  0 -1
+            
+            
+            
+            while  0256:   player $PLAYER_CHAR defined
+                wait 0
+                0172: 30@ = actor $PLAYER_ACTOR z_angle
+                0494: get_joystick_data  0 7@ 8@ 9@ 10@
+                3@ =  1.0
+                4@ =  1.0
+                                
+                if
+                    7@ >  0
+                then
+                    30@ -=  8.5
+                end                
+                
+                if
+                    0 > 7@
+                then
+                    30@ +=  8.5
+                end                
+                
+                if
+                    0 >  8@
+                then
+                    4@ =  5.0
+                end                
+                
+                if
+                    00E1:   key_pressed 0 6
+                then
+                    3@ =  5.0
+                end
+                                
+                0173: set_actor $PLAYER_ACTOR z_angle_to  30@
+                02F6: 1@ = cosine 30@  // sinus swapped with cosine
+                02F7: 2@ = sinus 30@ // cosine swapped with sinus 
+                006B: 1@ *= 4@  // floating-point values
+                006B: 2@ *= 4@  // floating-point values
+                0013: 1@ *=  -1.0  // floating-point values
+                083C: set_actor $PLAYER_ACTOR velocity_in_direction_XYZ 1@ 2@ 3@
+                
+                if  or
+                    00E1:   key_pressed 0 15
+                    8611:  not actor $PLAYER_ACTOR animation == "Swim_Breast"
+                then                
+                    break
+                end    
+            end
+            
+            
+            0792: disembark_instantly_actor $PLAYER_ACTOR
+            04EF: release_animation "SWIM"
+            
+            
+        end
+    end
+end

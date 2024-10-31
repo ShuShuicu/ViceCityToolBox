@@ -1,0 +1,68 @@
+{$CLEO .cs}
+:Menue_COLOR_HighLevel
+03A4: name_thread 'MENUCOL'
+
+const  
+L_PANEL_VAR = 0@
+L_ACTIVE_ROW_VAR = 1@
+L_PANEL_IS_SHOWN_VAR = 2@
+end
+
+while true
+wait 0
+    if
+        0256:   player $PLAYER_CHAR defined
+    then
+            if
+                L_PANEL_IS_SHOWN_VAR  == 0
+            then    
+                    if  and
+                        00E1:   key_pressed  0  11//--- key = YES
+                        00DF:   actor $PLAYER_ACTOR driving 
+                    then                        
+                        gosub @MENU_1
+                    end
+            else// if menue is shown, if L_PANEL_IS_SHOWN_VAR  == 1
+                    if  or
+                        00E1:   key_pressed  0  0//--- key = left/right
+                        00E1:   key_pressed  0  1//--- key = forward/backward
+                    then
+                        gosub @Selection_1
+                    end
+                    if
+                        00E1:   key_pressed  0  15//--- key = Enter/Exit
+                    then                                                
+                        gosub @Remove_panel
+                    end
+            end
+    else//if player dies or gets arrested
+            if
+                L_PANEL_IS_SHOWN_VAR  == 1
+            then
+                gosub @Remove_panel//if player dies or gets arrested while meue is shown
+            end    
+    end
+end
+
+:MENU_1
+03C0: 13@ = actor $PLAYER_ACTOR car
+01B4: set_player $PLAYER_CHAR frozen_state  0 (frozen)
+0826: toggle_hud  0
+0964: create_square_color_panel 'CARM1' position 400.0  20.0  width 25.7 columns 8 interactive 1 background 1 alignment 1 panelID L_PANEL_VAR  // Colors
+L_PANEL_IS_SHOWN_VAR = 1
+return
+
+:Remove_panel
+08DA: remove_panel L_PANEL_VAR
+L_PANEL_IS_SHOWN_VAR = 0
+0826: toggle_hud  1
+wait 500
+01B4: set_player $PLAYER_CHAR frozen_state  1 (unfrozen)   
+return
+
+
+:Selection_1
+08D7: L_ACTIVE_ROW_VAR = panel L_PANEL_VAR active_row
+0A22: set_car_color_to_panel_color_panelID L_PANEL_VAR car 13@ colorslot 1 active_row L_ACTIVE_ROW_VAR
+return
+

@@ -1,0 +1,12 @@
+
+
+
+{$CLEO .cs}
+thread 'timer'
+33@ = 0
+
+while true
+    wait 0
+    03F0: enable_text_draw 1 
+    045A: draw_text_1number 100.0  200.0 GXT 'NUMBER' number 33@
+end

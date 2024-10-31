@@ -1,0 +1,31 @@
+This PowerBasic® freeware project contains many of the 
+snippets, advice and programming information I found within the
+PB community. Any credit is due primarilly to the myraid 
+contributors to the PB Forums. Special thanks is offered to the 
+PB programmers listed below.
+   
+   Borje Hagsten    
+   Steve Hutchesson 
+   Fred Oxenby 
+   Dave Navarro
+   Don Dickinson
+   Lance Edmonds
+   Kev G Peel
+   Patrice Terrier
+   Ralph Berger
+   Semen Matusovski
+   Paul Squires
+   
+As well as to the PB community at-large for your willingness to 
+share your knowledge and skills.   
+------------------------------------------------------------------   
+This application would not have been possible without the 
+excellent editing control originally written by Barry Allyn
+and most generously available free with its C++ source code.
+
+   http://www.sourceforge.com.   
+------------------------------------------------------------------   
+Please post comments, criticisms and suggestions to:
+   Bruce Brown 
+   brbrown@alltel.net
+   

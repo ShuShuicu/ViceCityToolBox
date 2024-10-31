@@ -1,0 +1,37 @@
+
+
+
+
+
+{$CLEO .cs}
+thread 'PAINT' 
+
+while true
+    wait 0 
+    if 
+        0256:   player $PLAYER_CHAR defined
+    then
+        if or
+            00DD:   actor $PLAYER_ACTOR driving_car_with_model #REMINGTN
+            00DD:   actor $PLAYER_ACTOR driving_car_with_model #blade
+            00DD:   actor $PLAYER_ACTOR driving_car_with_model #SAVANNA
+        then
+            03C0: 0@ = actor $PLAYER_ACTOR car
+            06ED: set_car 0@ paintjob 0
+            wait 1000
+            06ED: set_car 0@ paintjob 1
+            wait 1000 
+        end    
+        if or
+            00DD:   actor $PLAYER_ACTOR driving_car_with_model #BULLET
+            00DD:   actor $PLAYER_ACTOR driving_car_with_model #ALPHA
+            00DD:   actor $PLAYER_ACTOR driving_car_with_model #INFERNUS
+        then
+            03C0: 0@ = actor $PLAYER_ACTOR car
+            0229: set_car 0@ primary_color_to 0 secondary_color_to 17
+            wait 1000
+       
+        end        
+        wait 5000
+    end   
+end        

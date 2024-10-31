@@ -1,0 +1,1106 @@
+0002: jump ££Label008620
+03A4: name thread "MAIN"
+004c: jump if true ££nowhere  \\ never used in VC or gta 3
+00D6: if  0?  
+001d:   1@ > 2@  \\ integer values (never used in VC or GTA 3)
+0025:   1@ > 2@  \\ floating-point values (never used in VC or GTA 3) 
+0026:   100?? > 2@  \\ floating-point values (never used in VC or GTA 3)
+002b:   1? >= 1@  \\ integer values (never used in VC or GTA 3)
+002c:   100?? >= 104?? \\ integer values (never used in VC or GTA 3)
+002d:   1@ >= 2@  \\ integer values (never used in VC or GTA 3)
+002e:   100?? >= 2@  \\ integer values (never used in VC or GTA 3)
+0031:   1@ >= 1!  \\ floating-point values (never used in VC or GTA 3)
+0033:   1! >= 1@  \\ floating-point values (never used in VC or GTA 3)
+0034:   100?? >= 104??  \\ floating-point values (never used in VC or GTA 3)
+0035:   1@ >= 2@  \\ floating-point values (never used in VC or GTA 3)
+0036:   100?? >= 2@  \\ floating-point values (never used in VC or GTA 3)
+0037:   1@ >= 100??  \\ floating-point values (never used in VC or GTA 3)
+003b:   1@ == 2@  \\ integer values (never used in VC or GTA 3)
+003c:   100?? == 2@  \\ integer values (never used in VC or GTA 3)
+0044:   100?? == 104??  \\ floating-point values (never used in VC or GTA 3)
+0045:   1@ == 2@  \\ floating-point values (never used in VC or GTA 3)
+0046:   100?? == 2@  \\ floating-point values (never used in VC or GTA 3)
+029c:   $something stopped \\ never used in VC or gta 3
+02a0:   actor $actor stopped  \\ never used in VC
+02EF:   projectile in cube 376.062! -445.188! 28.0625! 380.062! -441.188! 31.6875!  \\ never used in VC
+0351:   gore enabled  \\ never used in VC
+00a2:   actor $actor alive  \\ never used in VC or GTA 3
+00ac:   car $car on land  \\ never used in VC or GTA 3
+015e:   car $car wheels on ground  \\ never used in VC
+0228:   car $LIPSFORELLI_CAR bomb status ==  5?  \\ never used in VC
+0356:   explosion type $dunno in cube 1! 2! 3! 1! 2! 3!  \\ never used in VC or gta 3
+042A:   threat exists 8? 1?  \\ never used in VC
+0130:   player $PLAYER_CHAR busted  \\ never used in VC
+0178:   player $PLAYER_CHAR picked up object $object  \\ Never used in VC. use opcode 0214.
+0179:   actor $actor picked up object $object  \\ Never used in VC or GTA 3
+00E6:   player $PLAYER_CHAR stopped 0? ()near point  13984??  13988?? radius  10!  15!  \\ never used in VC
+00E8:   player $PLAYER_CHAR stopped 0? ()near point in car  13984??  13988?? radius  10!  15!  \\ never used in VC
+00EF:   actor $actor stopped 0? ()near point 123! 234! radius 10! 11!  \\ never used in VC
+00F1:   actor $actor stopped 0? ()near point in car 123! 234! radius 10! 11!  \\ never used in VC
+00F4:   actor $actor near actor in car $actor2 radius 123! 234! 345!  \\ never used in VC or GTA 3
+0103:   actor $actor stopped near point in car 123! 234! 345! radius 123! 234! 345! sphere 0?  \\ never used in VC
+0105:   actor $actor near actor on foot $actor2 radius 123! 234! 345! sphere 0?  \\ never used in VC or gta 3
+0106:   actor $actor near actor in car $actor2 radius 123! 234! 345! sphere 0?  \\ never used in VC or gta 3
+02AE:   player $PLAYER_CHAR in area on foot 64.8222! 613.6588! 96.7488! 550.3496! radius 20! sphere 0?  \\ never used anywhere
+02AF:   player $PLAYER_CHAR in area in car 64.8222! 613.6588! 96.7488! 550.3496! radius 20! sphere 0?  \\ never used anywhere
+02b0:   player $PLAYER_CHAR stopped in area 64.8222! 613.6588! 96.7488! 550.3496! radius 20! sphere 0?  \\ never used anywhere
+02b1:   player $PLAYER_CHAR stopped in area on foot 64.8222! 613.6588! 96.7488! 550.3496! radius 20! sphere 0?  \\ never used anywhere
+02b2:   player $PLAYER_CHAR stopped in area in car 64.8222! 613.6588! 96.7488! 550.3496! radius 20! sphere 0?  \\ never used anywhere
+02B6:   player $PLAYER_CHAR stopped in cube 393.174! -470.686! 10! 386.992! -478.052! 15! radius 8.2! sphere 0?  \\ never used anywhere
+02B7:   player $PLAYER_CHAR stopped in cube on foot 393.174! -470.686! 10! 386.992! -478.052! 15! radius 8.2! sphere 0?  \\ never used anywhere
+02B8:   player $PLAYER_CHAR stopped in cube in car 393.174! -470.686! 10! 386.992! -478.052! 15! radius 8.2! sphere 0?  \\ never used anywhere
+0197:   player $PLAYER_CHAR 0? ()in rectangle on foot 1089.88! -223.875!  1084.5! -228.5!  \\ never used in VC
+0198:   player $PLAYER_CHAR 0? ()in rectangle in car 1089.88! -223.875!  1084.5! -228.5!  \\ never used in VC or gta 3
+0199:   player $PLAYER_CHAR 0? ()in rectangle 1089.88! -223.875!  1084.5! -228.5!  \\ never used in VC or gta 3
+019a:   player $PLAYER_CHAR stopped 0? ()in rectangle on foot 1089.88! -223.875!  1084.5! -228.5!  \\ never used in VC or gta 3
+019b:   player $PLAYER_CHAR stopped 0? ()in rectangle in car 1089.88! -223.875!  1084.5! -228.5!  \\ never used in VC
+019c:   player $PLAYER_CHAR 0? ()in cube on foot 123! 123! 123! 234! 234! 234!  \\ never used in VC
+019d:   player $PLAYER_CHAR 0? ()in cube in car 123! 123! 123! 234! 234! 234!  \\ never used in VC
+019e:   player $PLAYER_CHAR stopped 0? ()in cube 123! 123! 123! 234! 234! 234!  \\ never used in VC
+019f:   player $PLAYER_CHAR stopped 0? ()in cube on foot 123! 123! 123! 234! 234! 234!  \\ never used in VC
+01a0:   player $PLAYER_CHAR stopped 0? ()in cube in car 123! 123! 123! 234! 234! 234!  \\ never used in VC
+01a1:   actor $actor 0? ()in rectangle on foot 1089.88! -223.875!  1084.5! -228.5!  \\ never used in VC or gta 3
+01a2:   actor $actor 0? ()in rectangle in car 1089.88! -223.875!  1084.5! -228.5!  \\ never used in VC or gta 3
+01a3:   actor $actor stopped 0? ()in rectangle 1089.88! -223.875!  1084.5! -228.5!  \\ never used in VC or gta 3
+01a4:   actor $actor stopped 0? ()in rectangle on foot 1089.88! -223.875!  1084.5! -228.5!  \\ never used in VC or gta 3
+01a5:   actor $actor stopped 0? ()in rectangle in car 1089.88! -223.875!  1084.5! -228.5!  \\ never used in VC or gta 3
+01a6:   actor $actor 0? ()in cube on foot 123! 123! 123! 234! 234! 234!  \\ never used in VC
+01a7:   actor $actor 0? ()in cube in car 123! 123! 123! 234! 234! 234!  \\ never used in VC
+01a8:   actor $actor stopped 0? ()in cube 123! 123! 123! 234! 234! 234!  \\ never used in VC
+01a9:   actor $actor stopped 0? ()in cube on foot 123! 123! 123! 234! 234! 234!  \\ never used in VC
+01aa:   actor $actor stopped 0? ()in cube in car 123! 123! 123! 234! 234! 234!  \\ never used in VC
+01ab:   car $car stopped 0? ()in rectangle 1089.88! -223.875!  1084.5! -228.5!  \\ never used in VC or gta 3
+01ac:   car $car stopped 0? ()in cube 123! 123! 123! 234! 234! 234!  \\ never used in VC
+01Fd:   player $PLAYER_CHAR near car on foot $car radius  20!  20!  0?  \\ never used in VC
+0200:   player $PLAYER_CHAR near car on foot $car radius  8!  10!  3! unknown  0?  \\ never used in VC
+0201:   player $PLAYER_CHAR near car in car $car radius  8!  10!  3! unknown  0?  \\ never used in VC
+0204:   actor $actor near car in car $car radius 35!  35! unknown 0?  \\ never used in VC
+0206:   actor $actor near car on foot $car radius 35!  35! 35!  unknown 0?  \\ never used in VC
+0207:   actor $actor near car in car $car radius 35!  35! 35!  unknown 0?  \\ never used in VC
+004D: jump if false ££nowhere2
+009d: unknown do nothing  \\ Never used
+0012: 1@ *= 1?  \\ integer values (never used in VC or GTA 3)
+0013: 1@ *= 1!  \\ floating-point values (never used in VC or GTA 3)
+0016: 1@ /= 1?  \\ integer values (never used in VC or GTA 3)
+0017: 1@ /= 1!  \\ floating-point values (never used in VC or GTA 3)
+005a: 1@ += 2@  \\ integer values (never used in VC or GTA 3)
+005b: 1@ += 2@  \\ floating-point values (never used in VC or GTA 3)
+005c: 1@ += 100??  \\ integer values (never used in VC or GTA 3)
+005d: 1@ += 100??  \\ floating-point values (never used in VC or GTA 3)
+005e: 100?? += 1@  \\ integer values (never used in VC or GTA 3)
+005f: 100?? += 1@  \\ floating-point values (never used in VC or GTA 3)
+0062: 1@ -= 2@  \\ integer values (never used in VC or GTA 3)
+0063: 1@ -= 2@  \\ floating-point values (never used in VC or GTA 3)
+0064: 1@ -= 100??  \\ integer values (never used in VC or GTA 3)
+0065: 1@ -= 100??  \\ floating-point values (never used in VC or GTA 3)
+0066: 100?? -= 1@  \\ integer values (never used in VC or GTA 3)
+0072: 1@ /= 2@  \\ integer values (never used in VC or GTA 3)
+0073: 1@ /= 2@  \\ floating-point values (never used in VC or GTA 3)
+0074: 1@ /= 100??  \\ integer values (never used in VC or GTA 3)
+0075: 1@ /= 100??  \\ floating-point values (never used in VC or GTA 3)
+0076: 100?? /= 1@  \\ integer values (never used in VC or GTA 3)
+0079: 1@ += unknown inaccurate float timer 1!  \\ floating-point (never used in VC or GTA 3)
+007a: 100?? += unknown inaccurate float timer 104??  \\ floating-point (never used in VC or GTA 3)
+007b: 1@ += unknown inaccurate float timer 2@  \\ floating-point (never used in VC or GTA 3)
+007c: 100?? += unknown inaccurate float timer 1@  \\ floating-point (never used in VC or GTA 3)
+007d: 1@ += unknown inaccurate float timer 100??  \\ floating-point (never used in VC or GTA 3)
+007f: 1@ -= unknown inaccurate float timer 1!  \\ floating-point (never used in VC or GTA 3)
+0080: 100?? -= unknown inaccurate float timer 104??  \\ floating-point (never used in VC or GTA 3)
+0081: 1@ -= unknown inaccurate float timer 2@  \\ floating-point (never used in VC or GTA 3)
+0082: 100?? -= unknown inaccurate float timer 2@  \\ floating-point (never used in VC or GTA 3)
+0083: 1@ -= unknown inaccurate float timer 100??  \\ floating-point (never used in VC or GTA 3)
+008E: 1@ = float to integer 2@  \\ never used in VC or GTA 3
+008F: 1@ = integer to float 2@  \\ never used in VC or GTA 3
+0090: 100?? = float to integer 2@  \\ never used in VC or GTA 3
+0091: 100?? = integer to float 2@  \\ never used in VC or GTA 3
+0092: 1@ = float to integer 100??  \\ never used in VC or GTA 3
+0093: 1@ = integer to float 100??  \\ never used in VC or GTA 3
+0094: make 100?? absolute integer  \\ never used in VC or GTA 3
+0095: make 1@ absolute integer  \\ never used in VC or GTA 3
+0096: make 100?? absolute float  \\ never used in VC or GTA 3
+0097: make 1@ absolute float  \\ never used in VC or GTA 3
+0098: 100?? = random float 0 to 1  \\ never used in VC or GTA 3
+0099: 100?? = random integer 0 to 65535  \\ never used in VC or GTA 3
+00bd: text mediumpriority "GOAWAY1" 5000& ms 1?  \\ never used in VC or GTA 3
+00e2: get key pressed $dunno1 $dunno2  \\ never used in VC or GTA 3
+0113: set player $PLAYER_CHAR car weapon 23? ammo to 9999&  \\ Never used in VC or gta 3
+0135: $doorstatus = car $car door status  \\ never used in VC
+0156: set ped density "PARK" 1? (day) 0?  \\ never used in VC
+016F: create particle 3? 0! 1! 0? 255& 0? 0? at 1270.81! -1107.69! 11.0625!  \\ Never used in VC
+017b: set actor $actor weapon 1? ammo to 1?  \\ Never used in VC or GTA 3
+01E6: text 1number lowpriority "G COST"  100?  1000& ms  1? \\ never used in VC or GTA 3
+0218: text 1number styled "REWARD" $VIGILANTE_BONUS 6000& ms 6? \\ Never used in VC
+021d: set free bomb shop to 0?  \\ never used in VC
+023a: has player collided with object $dunno1 $dunno2  \\ never used in VC or GTA 3
+023b: has actor collided with object $dunno1 $dunno2  \\ never used in VC or GTA 3
+0242: set car $BLOWFISH_GARBAGE_TRUCK bomb status to 1?  \\ never used in VC
+024C: text phone $PHONE_RAY1 "AM4 1A"  \\ never used in VC
+0250: create light at 780.5! -942.875! 39! RGB values 235& 255& 250&  \\ never used in VC
+0255: set critical mission restart at 811.875! 811.875! 811.875! angle 180!  \\ never used in VC
+0299: activate garage $WITSEC_HOUSE_GARAGE  \\ never used in VC
+02A2: create particle 4? 0? at 791.625! -936.875! 38.3125!  \\ never used in VC
+02B9: deactivate garage $WITSEC_HOUSE_GARAGE  \\ never used in VC
+02bc: set cop behaviour 0? (arrest)  \\ never used in VC
+02F4: create cutscene actor $INTRO_CAT from head #CUTOBJ05 and body $INTRO_CAT_BODY  \\ never used in VC
+02F5: set head anim $INTRO_CAT "CAT"  \\ never used in VC
+02FC: text 2numbers "RACETM"  16376??  16384??  5000& ms  1? \\ never used in VC or GTA 3
+02FE: text 2numbers highpriority "RACETM"  16376??  16384??  5000& ms  1? \\ never used in VC or GTA 3
+0300: text 3numbers highpriority "WHEEL02"  2904??  3084??  3072?? time  3000& ms  1? \\ never used in VC or GTA 3
+0301: text 3numbers lowpriority "WHEEL02"  2904??  3084??  3072?? time  3000& ms  1? \\ never used in VC or GTA 3
+0303: text 4numbers highpriority "WHEEL01"  2904??  3076??  3080??  3072??  3000& ms  1?  \\ never used in VC or GTA 3
+0306: text 5numbers highpriority "WHEEL01"  2904??  3076??  3080??  $numnut  3072??  3000& ms  1?  \\ never used in VC or GTA 3
+032D: car $car block $car2  \\ never used in VC
+0346: set text draw background color 0? 0? 0? 4488??  \\ never used in VC
+0349: text draw style =  0?  \\ never used in VC
+0354: set up chase scene 1!  \\ never used in VC
+0355: clean up chase scene  \\ never used in VC
+036E: text 3numbers styled "IN ROW" 26848?? 26892?? $numnut 5000& ms  6? \\ never used in VC or gta 3
+036F: text 4numbers styled "IN ROW" 26848?? 26892?? $numnut $numnut2 5000& ms  6? \\ never used in VC or gta 3
+0370: text 5numbers styled "IN ROW" 26848?? 26892?? $numnut $numnut2 $numnut3 5000& ms  6? \\ never used in VC or gta 3
+0371: text 5numbers styled "IN ROW" 26848?? 26892?? $numnut $numnut2 $numnut3 $numnut4 5000& ms  6? \\ never used in VC or gta 3
+037f: give player detonator  \\ never used in VC
+0397: car $car siren = 1? (on)  \\ never used in VC
+0398: remove forbidden for peds angled cube 10! 11! 12! 13! 14! 15! angle 45!  \\ never used in VC or gta 3
+0399: create forbidden for peds angled cube 10! 11! 12! 13! 14! 15! angle 45!  \\ never used in VC
+039a: remove forbidden for cars angled cube 10! 11! 12! 13! 14! 15! angle 45!  \\ never used in VC or gta 3
+039b: create forbidden for cars angled cube 10! 11! 12! 13! 14! 15! angle 45!  \\ never used in VC or gta 3
+03A5: garage $SECURICAR_GARAGE type = 7? 118?  \\ never used in VC
+03DD: pickup $TONI1_GRENADE_PICKUP show on radar 20? 7524??  \\ never used in VC
+040a: remove car from chase 1?  \\ never used in VC
+0410: override gang model 6? 0?  \\ gta 3 only. Use opcode 0235 in VC.
+041C: make actor $CHAR_GUNSHOPOWNER say 103?  \\ never used in VC
+043a: start boat foam animation  \\ never used in VC
+043b: update boat $cutsceneanim foam animation  \\ never used in VC
+0444: create fire audio 11852??  1?  \\ never used in VC
+044E: car $car level 1? (set from position)  \\ never used in VC
+016A: fade  0? ()  0? ms
+042C: set total missions to  88?
+030D: set total mission points to  154&
+01F0: set max wanted level to  4?
+02ED: set total hidden packages to  100?
+0111: set wasted busted check to  0? (disabled)
+00C0: set current time  22?  0?
+04E4: unknown refresh game renderer at  83! -849.8!
+03CB: set camera  83! -849.8!  9.3!
+0053: $PLAYER_CHAR = create player #NULL at  83! -849.8!  9.3!
+01F5: $PLAYER_ACTOR = create emulated actor from player $PLAYER_CHAR
+0417: start mission  0?
+029B: $ARENA_DOOR_1 = init object -1? (DTN STADDOORA) at -1109.615!  1330.097!  20.372!
+01C7: spawn object $ARENA_DOOR_1
+0004:  268?? =  0?  \\ integer values
+0213:  440?? = create pickup -4? (BRIBE) type  15? at  393.9! -60.2!  11.5!
+014B:  348?? = init parked car generator #DELUXO -1? -1?  1? alarm  0? door lock  0?  0?  10000& at -1022.6! -868.6!  12.2! angle  175!
+014C: set parked car generator  348?? cars to generate to  0?
+024A:  1168?? = create phone at  36.90385! -1023.3!
+0180: set on mission flag to $ONMISSION
+0005:  2340?? =  304.5!  \\ floating-point values
+04AE: unknown  1684?? model  4?
+02A7:  892?? = create marker  1668?? at  1824??  1828??  1832??
+0164: disable marker  892??
+0517: $PRINT_WORKS_ASSET = create unavailable asset pickup "PRNT NO" at  2196??  2200??  2204?? 
+0518:  2648?? = create available asset pickup "NBMN L" at  2292??  2296??  2300?? price  2644?? 
+0570:  2640?? = create asset radar marker with icon  25? at  2292??  2296??  2300??
+0219:  2724?? = create garage type  5? from -914.129! -1263.54!  10.706! to -906.3! -1266.9!  14.421! front -907.137! -1246.626!
+03BB: set garage  2728?? door type to swing open
+03DA: set garage  2756?? camera follows player
+057A: set garage  2620?? max cars to  1?
+02A8:  1496?? = create marker  27? at  2820??  2824??  2828??
+049C: unknown set special object flags  0?  90! to  2888??
+049D: unknown use special object flags  2888?? in object  2856??
+049E: unknown change special objects flag  2888??  0!
+0001: wait  0? ms
+004F: create thread ££Label010011 
+00D7: create thread with wasted busted check ££Label012DE1  
+0256:   player $PLAYER_CHAR defined
+01B6: set weather  0?
+8118:   NOT   actor $PLAYER_ACTOR dead
+0352: set actor $PLAYER_ACTOR skin to "PLAYER"
+038B: load requested models
+0353: refresh actor $PLAYER_ACTOR
+04BB: select interiour  0?  
+01B4: set player $PLAYER_CHAR frozen state  1? (unfrozen)
+01B7: release weather
+0038:   $ONMISSION ==  0?  \\ integer values
+0022:    100! >  408??  \\ floating-point values
+058C:  408?? = percentage completed
+055B:  5408?? = create clothes pickup  12? at -382.6! -585.9!  25.3!
+03E5: text box "CUNTY" 
+055E: set player $PLAYER_CHAR max health +=  50?
+055F: set player $PLAYER_CHAR max armor +=  50?
+035E: set player $PLAYER_CHAR armour to  200&
+0222: set player $PLAYER_CHAR health to  200&
+030C: set mission points +=  1?
+004E: end thread
+00F6:   player $PLAYER_CHAR  0? ()near point on foot  1812??  1816??  1820?? radius  1.4!  1.8!  1.5!
+03EE:   is not wanted $PLAYER_CHAR
+02A3: toggle widescreen  1? (on)
+015F: set camera position  219.726! -1282.485!  12.53!  0!  0!  0!
+0160: point camera  218.872! -1282.988!  12.392!  2?
+0171: set player $PLAYER_CHAR z angle to  100!
+0211: actor $PLAYER_ACTOR walk to  204.3! -1288.7!
+0006:  16@ =  0?  \\ integer values
+8019:   NOT    16@ >  1000&  \\ integer values
+0050: gosub ££Label012879
+00BA: text styled "INT B"  15000& ms  2? 
+03EF: player $PLAYER_CHAR make safe
+0169: set fade color  0?  0?  0?
+0039:    0@ ==  0?  \\ integer values
+00F5:   player $PLAYER_CHAR  0? ()near point -926.8099! -327.8378!  13.3894! radius  4!  4!  4!
+010E: set player $PLAYER_CHAR minimum wanted level to  4?
+02E1:  1@ = create cash pickup  500& at -965.2795! -334.6384!  15!
+018D:  6@ = create sound  0? at -923.4324! -333.2397!  14.3816!
+018E: stop sound  6@
+0215: destroy pickup  1@
+0214:   pickup $PRINT_WORKS_ASSET picked up
+03AF: set streaming  0? (disabled)
+010A:   player $PLAYER_CHAR money >  1000&
+0042:    2900?? ==  100!  \\ floating-point values
+0084:  2892?? =  2896??  \\ integer values and handles
+0085:  2@ =  3@  \\ integer values and handles
+0007:  10@ = -403.7998!  \\ floating-point values
+008A:  2892?? =  0@  \\ integer values and handles
+008B:  0@ =  2892??  \\ integer values and handles
+0583:   unknown player $PLAYER_CHAR unknown zone check "GANG1"
+0248:   model #PGA available
+80C2:   NOT   sphere onscreen  10@  11@  12@  1!
+009A:  2892?? = create actor  4? #PGA at  10@  11@  12@
+0173: set actor  2892?? z angle to  13@
+04F5: unknown actor  2892?? kiss player $PLAYER_CHAR on  1?
+0243: set actor  2892?? ped stats to  16?
+01ED: spawn actor  2892??
+0568:  2892??  1?
+01B2: give actor  2892?? weapon  23? ammo  9999&  
+0372: set actor  2892?? anim  24? wait state time  60000000&& ms
+01C5: unknown actor  2892??
+0319: set actor  2892?? wander state to  1? (off)
+0223: set actor  2892?? health to  250&
+02E2: set actor  2892?? weapon accuracy to  80?
+054A: unknown actor  2892?? flag  0?
+0446: (unknown)  2892??  0? 
+03BC:  6@ = create sphere  14@  15@  12@  .75!
+001B:    2? >  2@  \\ integer values
+01C2: remove references to actor  2892??  
+03BD: destroy sphere  6@
+0109: player $PLAYER_CHAR money += -2000&
+01DF: tie actor  2892?? to player $PLAYER_CHAR
+053D:  2892??
+00E9:   player $PLAYER_CHAR  0? ()near actor  2892?? radius  100!  100!
+8320:   NOT   actor  2892?? in range of player $PLAYER_CHAR
+0051: return
+8039:   NOT    2@ ==  0?  \\ integer values
+8583:   NOT   unknown player $PLAYER_CHAR unknown zone check "GANG1"
+0235: set gang  2? models to #ARMY #ARMY
+03F1: pedtype  9? add threat  1?
+0237: set gang  2? primary weapon to  26? secondary weapon to  26?
+0592: unknown gang  2? flag  1?
+0247: request model #ARMY
+00DE:   player $PLAYER_CHAR driving vehicle type #HUNTER
+0500:   unknown player $PLAYER_CHAR skin == "PLAYER6"
+0056:   player $PLAYER_CHAR  0? ()in rectangle -1682.24! -179.9125! -1600.448! -150.8878!
+03F2: pedgroup  9? remove threat  1?
+0249: release model #ARMY
+040C:   is german game
+00BC: text highpriority "GOAWAY1"  5000& ms  1? 
+8256:   NOT   player $PLAYER_CHAR defined
+024E: disable phone  1168??
+0405: enable phone  1168??
+00F9:   player $PLAYER_CHAR stopped  0? ()near point on foot  2064??  2068??  2072?? radius  1!  1!  2!
+00F7:   player $PLAYER_CHAR  0? ()near point in car  1956??  1960??  1964?? radius  2!  2!  2!
+8596:   NOT $PLAYER_CHAR
+02DE: unknown player $PLAYER_CHAR
+0293:  72?? = current controls
+8038:   NOT    72?? ==  3?  \\ integer values
+00E1:   key pressed  0?  19?
+82DE:   NOT unknown player $PLAYER_CHAR
+03E6: remove text box
+80DE:   NOT   player $PLAYER_CHAR driving vehicle type #AMBULAN
+056C: $PLAYER_ACTOR
+856C:   NOT $PLAYER_ACTOR
+00BF:  36?? = current time hours,  40?? = current time minutes
+0018:    36?? >  19?  \\ integer values
+0177: set object $ARENA_DOOR_1 z angle to  90!
+8057:   NOT   player $PLAYER_CHAR  0? ()in cube -1118.978!  1326.515!  19.076! -1108.978!  1335.515!  23.076!
+0008:  32?? +=  1?  \\ integer values
+0108: destroy object  24??
+054D:  0?
+80E0:   NOT   player $PLAYER_CHAR driving
+0121:   player $PLAYER_CHAR in zone "BEACH3"
+00E3:   player $PLAYER_CHAR  0? ()near point -1235.1! -1235.7! radius  4!  4!
+0443:   player $PLAYER_CHAR in a car
+80F5:   NOT   player $PLAYER_CHAR  0? ()near point -585.8! -1506.8!  5! radius  14!  14!  4!
+0395: clear area  1? at  220.3! -1275.5! range  11!  1!
+0055: put player $PLAYER_CHAR at  220.3! -1275.5!  11!
+0019:    16@ >  500&  \\ integer values
+02EB: restore camera with jumpcut
+0373: set camera directly behind player
+0189:  264?? = unknown create checkpoint at  240.4! -1280.2!  10!
+03E7: flash hud  8?
+00E0:   player $PLAYER_CHAR driving
+047E:   player $PLAYER_CHAR driving a motorbike
+02D7:   player $PLAYER_CHAR currentweapon ==  22?
+00FA:   player $PLAYER_CHAR stopped  0? ()near point in car  240.4! -1280.2!  10! radius  4!  4!  3!
+0460: set camera pointing time  0!  1500&
+018B: show on radar  884??  2?
+057B: (unknown)
+057D:  0?
+016B:   fading
+011C: actor $PLAYER_ACTOR clear objective
+00A1: put actor $PLAYER_ACTOR at  482.2! -69.9!  9.9!
+03D8: show save screen
+83D9:   NOT   save done
+0445:   unknown cheat check
+04C9: $PLAYER_CHAR
+04A8: $PLAYER_CHAR
+03C1:  2908?? = player $PLAYER_CHAR car
+04FC: store stunt data $PLAYER_CHAR two wheels:  3072??  3088?? wheelie:  3100??  3116?? stoppie:  3128??  3144??
+0014:  3072?? /=  1000&  \\ integer values
+008C:  3076?? = float to integer  3088??
+008D:  3092?? = integer to float  3076??
+0086:  3052?? =  3088??  \\ floating-point values only
+0061:  3052?? -=  3092??  \\ floating-point values
+0011:  3052?? *=  100!  \\ floating-point values
+0058:  2904?? +=  3076??  \\ integer values
+0424:   metric
+0302: text 4numbers "WHEEL01"  2904??  3076??  3080??  3072??  3000& ms  1? 
+0425: unknown metric stuff  3096?? =  3088??
+02FF: text 3numbers "WHEEL02"  2904??  3084??  3072?? time  3000& ms  1? 
+0010:  2904?? *=  2?  \\ integer values
+01F3:   car  2908?? airborne
+001A:    10? >  2984??  \\ integer values
+00AA:  3000?? = car  2908?? x pos,  3004?? = car  2908?? y pos,  3008?? = car  2908?? z pos
+0174:  3056?? = car  2908?? z angle
+0119:   car  2908?? wrecked
+820D:   NOT   car  2908?? flipped
+020D:   car  2908?? flipped
+0020:    3060?? >  180!  \\ floating-point values
+0059:  3060?? +=  3064??  \\ floating-point values
+0024:    3008?? >  2996??  \\ floating-point values only
+0069:  3032?? *=  3032??  \\ floating-point values
+01FB:  3044?? = square root  3040??
+030E: save jump distance  3044??
+030F: save jump height  2996??
+0310: save jump flips  2932??
+0311: save jump rotation  2956??
+0068:  2988?? *=  2924??  \\ integer values
+01E4: text 1number lowpriority "HJ IS"  2988??  2000& ms  1? 
+0312: save jump type  1?
+0308: text 6numbers "HJSTATW"  2944??  2940??  2916??  2936??  2932??  2956??  5000& ms  5? 
+042D:  2944?? = metric to imperial  2944??
+0314: set total unique jumps to  36?
+02E3:  3324?? = car  3156?? speed
+81F3:   NOT   car  3156?? airborne
+015D: set gamespeed  .3!
+0158: camera on vehicle  3156??  15?  2?
+02BF:   car  3156?? sunk
+0217: text styled "USJ"  5000& ms  5? 
+01E3: text 1number styled "REWARD"  3160??  6000& ms  6? 
+018C: play sound  1? at  0!  0!  0!
+0313: increment unique jumps found
+0060:  3428?? -=  3440??  \\ integer values
+0107:  3556?? = create object #COLT45 at -60.793! -1488.141!  12.24!
+0392: object  3556?? toggle in moving list  0?
+0453: object  3556?? set rotation  0!  8!  0!
+0350: unknown actor  3412?? not scared flag  1?
+0057:   player $PLAYER_CHAR  0? ()in cube -57.7! -1468.8!  13.4! -69.1! -1487.2!  9!
+01FA:  3632?? = rampage status
+0210: player $PLAYER_CHAR look at actor  3412??
+04D7: lock actor $PLAYER_ACTOR in current position  1?
+01E5: text 1number highpriority "G COST"  100?  1000& ms  1? 
+04B8: get weapon data player $PLAYER_ACTOR weapon group  4? weapon  3476?? ammo  3408?? model  3480??
+0490:   player $PLAYER_CHAR has weapon  18?
+0419:  3408?? = player $PLAYER_CHAR weapon  17? ammo
+01B1: give player $PLAYER_CHAR weapon  17? ammo  68?  
+01B8: set player $PLAYER_CHAR armed weapon to  17?
+0528: unknown add  100? to money spent on weapons stats
+04DD: $PLAYER_ACTOR  3492??
+80F6:   NOT   player $PLAYER_CHAR  1? (in-sphere)near point on foot  2124??  2128??  2132?? radius  1!  1!  2!
+82D7:   NOT   player $PLAYER_CHAR currentweapon ==  2?
+02DF: unknown player $PLAYER_CHAR
+031D:   actor  3412?? hit by weapon  47?
+01CA: actor  3412?? kill player $PLAYER_CHAR
+0457:   unknown player $PLAYER_CHAR unknown actor  3416??
+022F: set actor  3416?? stop looking
+04EB: unknown actor  3416?? bank  0? account number  9999999&&
+04C4: create coordinate  3584??  3588??  3592?? from actor  3416?? offset  0!  1.2!  0!
+0009:  3588?? +=  .1!  \\ floating-point values
+00A0:  3584?? = actor  3416?? x pos,  3588?? = actor  3416?? y pos,  3592?? = actor  3416?? z pos
+0054:  3596?? = player $PLAYER_CHAR x pos,  3600?? = player $PLAYER_CHAR y pos,  3604?? = player $PLAYER_CHAR z pos
+0512: "GUN H1"
+0494: unknown  0?  3520??  3524??  3528??  3532??
+000C:  3404?? -=  1?  \\ integer values
+80E1:   NOT   key pressed  0?  15?
+022D: set actor  3412?? to look at player $PLAYER_CHAR
+0118:   actor  3412?? dead
+01BD:  3440?? = current time in ms
+009B: destroy actor instantly  3412??
+0296: unload special actor  21?
+023C: load special actor  21? "SAM"
+823D:   NOT   special actor  21? loaded
+84A3:   NOT    3476??  0?
+0531:  1?
+01E8: create forbidden for cars cube -291! -287!  0!  208!  648!  35!
+032B:  3764?? = create weapon pickup  3684??  3? ammo  3736?? at  3888??  3892??  3896??
+04C7:  1?
+0170:  3900?? = player $PLAYER_CHAR z angle
+03C8: rotate player 180 degrees
+8184:   NOT   actor  3636?? health >=  90?
+02CE:  392?? = ground z  3812??  3816??  50!
+8042:   NOT    392?? ==  0!  \\ floating-point values
+8248:   NOT   model #GDA available
+009F: set actor  3636?? objective to 1
+8500:   NOT   unknown player $PLAYER_CHAR skin == "PLAYER6"
+01E7: remove forbidden for cars cube -291! -287!  0!  208!  648!  35!
+03B8: clear weapons from player $PLAYER_CHAR
+000D:  3892?? -=  1.85!  \\ floating-point values
+048C:   unknown pickup exists at  3888??  3892??  3896??
+02F6:  3888?? = cosine  3924??  
+02F7:  3892?? = sinus  3924?? 
+01CC: actor  3636?? kill player $PLAYER_CHAR
+0241:   player $PLAYER_CHAR in remote mode
+0484:  4016?? = player $PLAYER_CHAR rc car
+8119:   NOT   car  4016?? wrecked
+01AF:   car  4016??  0? ()near point  95.3! -1468.3!  9.5! radius  1.5!  1.5!  3!
+0409: blow up rc buggy
+847E:   NOT   player $PLAYER_CHAR driving a motorbike
+012A: put player $PLAYER_CHAR at  91.2! -1460.9!  10! and remove from car
+00A6: destroy car  4016??
+059A: (unknown)
+04F9: interiour colors  2?  0?
+01EB: set car density to  .1!
+03AD: set rubbish  0? (invisible)
+02B3:   player $PLAYER_CHAR in cube  399! -474.5!  11!  394.3! -470.8!  14.5! radius  2.5! sphere  0?
+015C: set zone gang info "STREET2"  1? (day)  14?  0?  0?  0?  0?  0?  0?  0?  0?  0?  1000& 
+022A: remove forbidden for peds cube  354.9! -483.1!  21!  406! -490!  0!
+022B: create forbidden for peds cube  354.9! -483.1!  21!  406! -490!  10!
+0291: unknown actor  4148?? unknown behavior flag  1?
+011A: set actor  4152?? flags  1?
+03BF: set player $PLAYER_CHAR ignored by everyone to  1? (true)
+04FA: reset interior colors  0?
+00E4:   player $PLAYER_CHAR  1? (in-sphere)near point on foot  69.3! -1455.9! radius  1!  1!
+04ED: unknown load skin "RIOT"
+84EE:   NOT   unknown skin "RIOT" loaded
+04EF: unknown unload skin "RIOT"
+0184:   actor  4080?? health >=  95?
+859A:   NOT (unknown)
+0239: actor  4144?? run to  65.8! -1444!
+041D: set camera near clip  .1!
+04A6:  2464?? = create asset money pickup at  93.3! -1472.14!  2288?? money  2468??  2468??
+0394: play music  1?
+00BE: text clear all
+02E4: load cutscene data "STRIPA"
+0244: set cutscene pos  69.5133! -1444.698!  9.5255!
+02E5:  500?? = create cutscene object #SPECIAL01
+02E6: set cutscene anim  500?? "CSPLAY"
+02E7: start cutscene
+02E8: $CUT_SCENE_TIME = cutscenetime
+82E9:   NOT cutscene reached end
+02EA: end cutscene
+010F:   player $PLAYER_CHAR wanted level >  0?
+0208:  4408?? = random float  0!  360!
+034F: destroy actor with fade  4148??  
+0175: set car  4016?? z angle to  4416??
+02FA: garage  2748?? change to type  9?
+0317: increment mission attempts
+0595: (unknown)
+00A5:  4484?? = create car #DELUXO at -1022.3! -868.2!  12!
+01C3: remove references to car  4484??  
+03D4:   garage  2748?? contains neededcar  1?
+044B: (unknown) $PLAYER_ACTOR 
+810F:   NOT   player $PLAYER_CHAR wanted level >  0?
+001C:    1584?? >  4728??  \\ integer values
+03CF: load wav "MOB 52A" as  4708??
+8121:   NOT   player $PLAYER_CHAR in zone "STARI"
+040D: unload wav  4708??
+04E2: $PLAYER_CHAR  1?
+052B: actor $PLAYER_ACTOR hold cellphone  1?
+83D0:   NOT   wav  4708?? loaded
+0521: $PLAYER_ACTOR
+844B:   NOT (unknown) $PLAYER_ACTOR 
+03D1: play wav  4708??
+83D2:   NOT   wav  4708?? ended
+029F:   player $PLAYER_CHAR stopped
+057F: $PLAYER_CHAR  4788??
+0594:  4740??  0?
+00AE: unknown set car  4740?? to ignore traffic lights  0?
+0376:  4744?? = create random actor  4792??  4796??  30!
+036A: put actor  4744?? in car  4740??
+0448:   actor  4744?? in car  4740??
+02C2: car  4740?? drive to point  4816??  4856??  4896??
+00AD: set car  4740?? max speed to  15!
+01AD:   car  4740??  0? ()near point  4816??  4856??  3!  3!
+0561: unknown create actor handle  4756?? from car  4740?? passenger  1?
+01D3: actor  4756?? leave car  4740??
+0407: create coordinate  4808??  4812??  4800?? from car  4740?? offset  0! -20!  0!
+80DC:   NOT   player $PLAYER_CHAR driving  4740??
+03BA: clear cars from cube  342.4!  1259.1!  21.5!  302.5!  1153.3!  26!
+03C5: create random car for carpark  310.2!  1234.8!  16.2!  90.2!
+04CF:  50?
+044A: (unknown) $PLAYER_CHAR 
+03E1:  5224?? = packages found
+0110: clear player $PLAYER_CHAR wanted level
+8183:   NOT   player $PLAYER_CHAR health >  99?
+056B:  5476??  1?
+020E: actor $PLAYER_ACTOR look at actor  5476??
+0209:  5468?? = random int  1?  15?
+0225:  5480?? = player $PLAYER_CHAR health
+010B:  5484?? = player $PLAYER_CHAR money
+0408: set total rampages to  35?
+00D8: mission cleanup
+04A3:    6072??  290&
+003A:    6068?? ==  5688??  \\ integer values and handles
+01F9: init rampage "PAGE 00"  6076??  120000&&  6080??  6044??  6048??  6052??  6056??  0? 
+03DF: all random peds  6040??
+0028:    36?? >=  23?  \\ integer values
+0015:  372?? /=  2!  \\ floating-point values
+04CE:  1732?? = unknown create marker  16? at  2124??  2128??  2132??
+016C: restart if wasted at  493.5!  703.1!  11.1!  90!
+016D: restart if busted at  508.9!  506.8!  10.3!  174!
+058D: unknown point command  407.6!  725.3!  10.5! angle  177!
+0152: set zone car info "STREET4"  1? (day)  13?  0?  0?  0?  0?  0?  0?  0?  0?  0?  50?
+04EC: unknown zone info "STREET4"  1?  300&  0?  350&  200&  0?  0?  100?  50?  0?  500&  500&
+0324: set zone pedgroup info "STREET4"  1? (day)  7?
+0236: set gang  4? car to #BAGGAGE
+034D: unknown rotate object  7220?? unknown angle  160!  160!  0?
+0566:  7236??  12?
+0382: unknown set object  7296?? collision detection  0?
+02EC: put hidden package at  479.6! -1718.5!  15.6!
+04F8: unknown path  1?  225! -1244!  227.4! -1248.5!  249! -1255!  246! -1250.6!  208.4! -1238.4!  209.6! -1243.5!
+054C: use GXT table "INTRO"
+044D: load splash "INTRO1"
+02F3: load object #CUTOBJ01 "SVNTRAY"
+0363: toggle model render at  231.4! -1277.7!  19! radius  50! obj -88? (MOB MOBROOM2)  1?
+0522: (unknown)
+0569: "AIRPLAN"
+0418: (unknown)  828??  1? 
+0525: unknown cutscene command  564??  828?? "MERCBOD"
+0598: unknown cutscene command  592??  10!  8?
+03D5: remove text "INT3 D" 
+856A:   NOT (unknown)
+058A: unknown -684.222! -1577.189!  12.384! -695.416! -1576.626!  12.415!
+01F7: set player $PLAYER_CHAR ignored by cops state to  1? (true)
+03DE: set pedestrians density multiplier to  0!
+02AC: set car  0@ immunities  1?  1?  1?  1?  1?
+01D4: actor $PLAYER_ACTOR go to car  0@ and enter it as a passenger
+0129:  2@ = create actor  4? #SPECIAL10 in car  0@ driverseat
+02AB: set actor  2@ immunities  1?  1?  1?  1?  1?
+00A9: set car  0@ to normal driver
+0229: set car  0@ color to  84?  84?
+041E: set radio station  9? -1?
+80DF:   NOT   actor $PLAYER_ACTOR driving
+04BA: unknown car  0@  20!
+00A7: unknown car  0@ drive to  103.1! -832.3!  9.317!
+0029:    17@ >=  30000&  \\ integer values
+81AF:   NOT   car  0@  0? ()near point  132.6! -818.278!  9.446! radius  3!  3!  4!
+00AB: put car  0@ at  132.6! -818.278!  9.446!
+03D2:   wav  1? ended
+03D0:   wav  1? loaded
+00DF:   actor  2@ driving
+0362: remove actor $PLAYER_ACTOR from car and place at  136.457! -817.37!  9.44!
+056A: (unknown)
+0336: (unknown) $PLAYER_CHAR  0? 
+0459: end thread named "LAW1"
+0112:   wasted or busted
+058E: unknown point command  110.6! -824.2!  9.6! angle  327.9!
+04BC: "LCFAN"
+01B5: force weather  0?
+022E: set player $PLAYER_CHAR to look at actor  13@
+00DB:   actor  13@ in car  14@
+0230: set player $PLAYER_CHAR stop looking
+018A:  76?? = create checkpoint at  8452??  8456??  8460??
+80FA:   NOT   player $PLAYER_CHAR stopped  1? (in-sphere)near point in car  8452??  8456??  8460?? radius  4!  4!  4!
+80DB:   NOT   actor  13@ in car  14@
+00FB:   player $PLAYER_CHAR  0? ()near actor  13@ radius  20!  20!  10!
+00DC:   player $PLAYER_CHAR driving  14@
+020F: actor  13@ look at player $PLAYER_CHAR
+01D5: actor  13@ go to and drive car  14@
+00DA:  8432?? = player $PLAYER_CHAR car
+03F3: get car  8432?? color  3@  4@
+0441:  8436?? = car  8432?? model
+83EE:   NOT   is not wanted $PLAYER_CHAR
+03B7: process cut scene only  0? (true)
+0545: (unknown)
+01BB:  1792?? = object  2856?? x pos,  1796?? = object  2856?? y pos,  1800?? = object  2856?? z pos
+039E: (unknown)  8396??  1? 
+0526: unknown actor  8396??  1?
+0187:  5@ = create marker above actor  8396??
+0245: set actor  8396?? walk style to  46?
+80FE:   NOT   actor  8396??  1? (in-sphere)near point  8440??  8444??  8448?? radius  2.5!  2.5!  3!
+80F8:   NOT   player $PLAYER_CHAR stopped  1? (in-sphere)near point  8440??  8444??  8448?? radius  2.5!  2.5!  3!
+80FB:   NOT   player $PLAYER_CHAR  0? ()near actor  8396?? radius  30!  30!  10!
+01E0: clear leader  8396??
+847A:   NOT  8396??
+043C: unknown set game sounds  0?
+80ED:   NOT   actor  8396??  0? ()near point on foot  97! -1471.4! radius  .4!  .4!
+0318: set latest mission passed "LAW 1" 
+03E2: actor $PLAYER_ACTOR exit car
+022C: set actor  8500?? to look at actor $PLAYER_ACTOR
+04E3: unknown player $PLAYER_CHAR  2?  60000&&
+80FF:   NOT   actor  8500??  0? ()near point on foot  433.7! -575.9!  9.7! radius  8!  8!  3!
+0126:   actor  8500?? walking
+056D:   unknown actor  8500?? dead but active
+04A5: unknown store dead actor  8500?? position to  8572??  8576??  8580??
+03DC:  11@ = create marker above pickup  10@
+8214:   NOT   pickup  10@ picked up
+0224: set car  104?? health to  2000&
+020A: set car  104?? door status to  1?
+0186:  8556?? = create marker above car  104??
+04C6: $PLAYER_ACTOR  8508??
+00FE:   actor $LANCE_VANCE  0? ()near point  427.6! -584.7!  10.6! radius  1!  1!  5!
+0411: (unknown) $LANCE_VANCE  0? 
+8510:   NOT   unknown actor  8504?? on path  380??  384??  388?? radius  4!
+009E: unknown set actor  8504?? path  380??  384??  388?? radius  2!  1?
+000A:  14@ +=  1?  \\ integer values
+80E9:   NOT   player $PLAYER_CHAR  0? ()near actor  8504?? radius  120!  120!
+80B1:   NOT   car  104??  0? ()in cube  272.8! -1341.5!  16!  212.5! -1280!  8!
+8448:   NOT   actor $LANCE_VANCE in car  104??
+00B1:   car  104??  0? ()in cube  272.9! -1220.6!  16!  212.5! -1280!  8!
+04F3: move actor $LANCE_VANCE from car passengerseat to driverseat
+02A9: set actor  8588?? immune to nonplayer  1?
+01EC: unknown car  8636?? flag  1?
+053F: unknown car  8636?? flag  0?
+0519: unknown car  8636?? flag  1?
+050D:  8588??
+01FC:   player $PLAYER_CHAR near car  8636?? radius  30!  30!  0?
+8185:   NOT   car  8636?? health >=  700&
+04FE: unknown car  8636?? flag  0?
+050B:  8636??
+03F9: make actors  8588??  8596?? converse in  999999999&& ms
+0467: unknown actor  8588??
+0552:  8796??
+035D: make object  8800?? targetable
+834E:   NOT unknown move object  7112?? to  304! -313.6!  11! unknown angle  .1!  .1!  0!  0?
+01BC: put object  7112?? at  298! -313.6!  11!
+03A1: unknown clear point  475.5!  30.3!  11! radius  3!
+0192: set actor $PLAYER_ACTOR objective to stand still
+80E3:   NOT   player $PLAYER_CHAR  0? ()near point  460.7!  27.5! radius  .5!  .5!
+00EC:   actor  9004??  0? ()near point  466.1!  42.7! radius  1!  1!
+0329:   garage  2736?? respray done
+01BE: set actor  9004?? to look at spot  474.7!  29.9!  11.07!
+00BB: text lowpriority "GEN1 23"  10000& ms  1? 
+0335: set free paynspray to  1? (true)
+0489: unknown actor  0@ flag  1?
+0481:  6!
+048F:  0@
+03EB: clear small messages only
+0502: unknown actor  0@ go to  1.7873! -928.6034!
+02CB:   actor  0@ bounding sphere visible
+03F4:  1? (set) cars can be damaged
+01D2: actor  0@ follow player $PLAYER_CHAR
+0172:  9140?? = actor  0@ z angle
+00FC:   player $PLAYER_CHAR  0? ()near actor  0@ on foot radius  3!  3!  2!
+00ED:   actor  0@  0? ()near point on foot  1.8336! -938.0876! radius  1!  1!
+82D8:   NOT   actor  0@ currentweapon ==  23?
+0071:  27940?? /=  19456??  \\ floating-point values
+01D0: actor  0@ avoid player $PLAYER_CHAR
+0477: unknown car  5@  6?  200&
+01C1:   car  5@ stopped
+03D7: set wav  1? location  1780??  1784??  1788??
+84AD:   NOT  0@
+010D: set player $PLAYER_CHAR wanted level to  0?
+0159: camera on ped  9164??  15?  2?
+04C2:  9164?? $PLAYER_ACTOR
+00F8:   player $PLAYER_CHAR stopped  1? (in-sphere)near point  9236??  9240??  9244?? radius  3!  3!  1.5!
+0101:   actor  9164?? stopped near point  9236??  9240??  9244?? radius  3!  3!  1.5! sphere  0?
+01C8:  9172?? = create actor  10? #CLB in car  9184?? passenger seat  0?
+82CB:   NOT   actor  9180?? bounding sphere visible
+00E7:   player $PLAYER_CHAR stopped  0? ()near point on foot  461.4445! -495.2143! radius  2!  2!
+00F0:   actor  9164?? stopped  0? ()near point on foot  461.4445! -495.2143! radius  2!  2!
+0337: unknown actor  9176?? flag  0?
+015A: restore camera
+0514: unknown actor  9180??  3?  0?
+0226:  9196?? = actor  9180?? health
+002A:    0? >=  9196??  \\ integer values
+0151: remove status text  9196??
+02E0: unknown actor  9164??
+00FF:   actor  9164??  0? ()near point on foot  9264??  9268??  9272?? radius  2!  2!  2!
+02AA: set car  9208?? immune to nonplayer  1?
+04E0: unknown car  9208??  3?
+01DE: tie actor  9232?? to actor  9228??
+04F7: unknown status text  9196??  1? line  1? "GEN3 22" 
+051A:   unknown actor  9180?? actor $PLAYER_ACTOR
+054E:  9180??
+82AD:   NOT   player $PLAYER_CHAR in area  453.5544! -461.5191!  441.1417! -531.2878! radius  33.5! sphere  0?
+0321: kill actor  9180??
+0162: tie marker  9376?? to actor  9280??  4?  2?
+0168: show on radar  9376??  2?
+0495:   unknown car check  9556??
+01C9: actor  9296?? kill actor  9164??
+00F2:   actor  9300?? near actor  9180?? radius  100!  100!  0?
+00AF: set car  9696?? driver behaviour to  10?
+0161: tie marker  9836?? to car  9696??  0?  1?
+0442:   player $PLAYER_CHAR in car  9696??
+81FC:   NOT   player $PLAYER_CHAR near car  9696?? radius  65!  65!  0?
+00EB:   player $PLAYER_CHAR  0? ()near actor in car  9692?? radius  50!  50!
+01B9: set actor  9180?? armed weapon to  0?
+0320:   actor  9164?? in range of player $PLAYER_CHAR
+00A8: set car  9684?? to psycho driver
+0449:   actor  9692?? in a car
+0466: unknown car  9868?? flag  0?
+0506: unknown  163& -1? (DTN STADDOORA)  1?
+0464: put actor  9940?? into turret on car  9872?? at car offset  .4242! -.0679!  1.1322! unknown  3? angle  270! with weapon  27?
+0493: unknown car  9880??  0?
+0088:  19448?? =  0@  \\ floating-point values only
+03C0:  9996?? = actor  9896?? car
+031E:   unknown vehicle check  9868?? unknown  39?
+0227:  10556?? = car  9868?? health
+0468:  9868??
+81AD:   NOT   car  9868??  0? ()near point -838.3314! -1490.493!  50!  50!
+0087:  10@ =  2@  \\ floating-point values only
+0067:  19448?? -=  0@  \\ floating-point values
+0089:  9@ =  19456??  \\ floating-point values only
+000F:  9@ -=  3!  \\ floating-point values
+0021:    9@ >  100!  \\ floating-point values
+0023:    0! >  9@  \\ floating-point values
+0043:    9@ ==  0!  \\ floating-point values
+03B1:   garage  2756?? door closed
+844A:   NOT (unknown) $PLAYER_CHAR 
+01CE: actor  10012?? avoid player $PLAYER_CHAR
+0465: remove actor  9972?? from turret mode
+01D9: actor  9900?? run away from car  19160??
+021B: set garage  2756?? to accept car  9880??
+0360: open garage  2756??
+01FF:   player $PLAYER_CHAR near car  9880?? radius  8!  10!  3! unknown  0?
+81FF:   NOT   player $PLAYER_CHAR near car  9880?? radius  8!  10!  3! unknown  0?
+021C:   car inside garage  2752??
+03C4: set status text to  10080??  1? (bar) "DETON" 
+020B: explode car  10020??
+0078:  10588?? += unknown inaccurate float timer  .017!  \\ floating-point values
+04FF:  9972??
+803A:   NOT    10108?? ==  10472??  \\ integer values and handles
+053E: unknown  10628??  10632??  1780??  1784?? -1? (DTN STADDOORA)  9884??
+02C0: set  10644??  10648??  1788?? to ped path coords closest to  1780??  1784??  1788??
+00EE:   actor  10028??  0? ()near point in car  10644??  10648?? radius  3!  3!
+0482:  6!
+0400: create coordinate  1792??  1796??  1800?? from object  2856?? offset -.277! -16.662!  3.152!
+04F4: unknown actor  10736?? mess around with object  2856?? -2.5! -1.996!  4.179!  0?  360!  27?
+84A8:   NOT $PLAYER_CHAR
+0176:  11244?? = object  2856?? z angle
+816B:   NOT   fading
+049F: unknown change special objects flag  2888??  3250!
+04E5:   unknown object  2856?? near point -277.999!  614.19! radius  25!  25! unknown  0?
+007E:  11240?? -= unknown inaccurate float timer  .01!  \\ floating-point values
+02DB: set boat  10784?? speed to  10!
+02D3: boat  10784?? drive to  171.0578!  942.3843!  6!
+02D4: unknown turn off car  10784?? engine
+0323: unknown car  10784?? flag  1?
+03A2: (unknown)  10808??  4? 
+04A2: heli  10764?? fly to  314.2827!  993.9822!  40! speed  30?
+0564:  10764??
+0508:  10764??
+0541:  10756??
+838A:   NOT   car in cube -238.2693! -1361.33!  7.0786!  4!  4!  4!
+0369: put player $PLAYER_CHAR in car  10732??
+04A1:  2888??
+0562:  10772??  1?
+0483: unknown actor  10772??  1500&
+01C4: remove references to object  10768??  
+8112:   NOT   wasted or busted
+039D: scatter particles  17?  .2!  0?  0?  0?  30000& at -375.4! -595.8!  25.75!  .05!  .05!  .05!
+01D8: unknown actor  0@ unknown fire at target  4@
+02CF:  14@ = create fire at  347.5!  417.4!  20.6!
+03AB: (unknown)  11264??  1? 
+0366: (unknown)  12@ 
+0185:   car  11264?? health >=  269&
+0377: set actor  0@ objective to 32
+01F4:   car  11264?? flipped
+00D9:  11264?? = actor  0@ car
+031A: remove all fires
+04DF:  11284??  1?
+0322: kill player $PLAYER_CHAR
+023D:   special actor  6? loaded
+04D0: unknown heli  11284?? turn to angle  270!
+04D1:  11284??
+8018:   NOT    11288?? >  9?  \\ integer values
+057C:  0?
+0524: unknown cutscene command  11576??  644??  24?
+82B3:   NOT   player $PLAYER_CHAR in cube -643.2! -1495.3!  12! -679.1! -1481.3!  18! radius -19.5! sphere  0?
+0123:   actor  0@ spotted player $PLAYER_CHAR
+046F: unknown player $PLAYER_CHAR  13@
+03AE: remove objects from cube -406.8! -552!  25! -437.9! -569.4!  10!
+054B:  500??  256??
+0202:   actor $LANCE_VANCE near car  0@ radius  20!  20! unknown  0?
+82BF:   NOT   car  256?? sunk
+047A: $PLAYER_ACTOR
+0167:  12528?? = create marker at -1219.969!  8.543!  10.44!  1?  3?
+03FE: unknown actor  11888??  200&
+80A3:   NOT   actor  0@  0? ()in rectangle -1234.15! -1! -1367.51!  250.33!
+0470:  12500?? = actor $PLAYER_ACTOR armed weapon unknown
+0332: set actor  0@ bleeding to  0? (false)
+001E:    11880?? >  1@  \\ integer values
+03AC: remove route point  0?
+0190: unknown car  12368??
+03CC: car  12368?? add to stuck car check  .5! =  3000&
+02C1: set  12536??  12540??  12544?? to car path coords closest to  12548??  12552??  12556??
+03CD: car  12368?? remove from stuck car check
+0191: unknown car  12368??
+03CE:   car  12368?? stuck
+84F0:   NOT   unknown actor check  0@
+01E2: add route point  0? at  11932??  11936??  11940??
+01E1: set actor  11912?? objective to 27  0?  3?
+042B: clear peds from cube  316.5!  207.966!  9.23!  335.8277!  190.5508!  11.3988!
+03C7: unknown maby cops density  .1!
+8203:   NOT   actor  12664?? near car on foot  12980?? radius  35!  35! unknown  0?
+02AD:   player $PLAYER_CHAR in area  64.8222!  613.6588!  96.7488!  550.3496! radius  20! sphere  0?
+8104:   NOT   actor  12660?? near actor  12664?? radius  30!  30!  30! sphere  0?
+80EC:   NOT   actor  12660??  0? ()near point  12816??  12820?? radius  1.5!  1.5!
+046C:  13068?? = unknown car  12736?? driver
+0203:   actor  12664?? near car on foot  12736?? radius  35!  35! unknown  0?
+048A:  0?
+8442:   NOT   player $PLAYER_CHAR in car  13232??
+01C0:  13240?? = player $PLAYER_CHAR wanted level
+046E: unknown put player $PLAYER_CHAR in RC mode at  13312??  13316??  13320?? angle  13324?? RC model #RCGOBLIN
+0188:  13356?? = create marker above object  13340??
+0550:  13688??  1?
+032A: unknown  0?
+04DA:   unknown object check  13340??
+04D9:  13340??  0?
+035C: place object  13340?? relative to car  13308?? offset  0!  0! -.4!
+0585: (unknown)
+050E:  13340??  13308??
+0381: throw object  13340?? distance  0!  0! -1!
+04E6:   unknown object  13340?? near point  13468??  13472??  13476?? radius  3.5!  3.5!  3.5! unknown  1?
+0205:   actor  13244?? near car  13308?? radius  7!  7!  6! unknown  0?
+03C3: set timer with text to  13608?? type  1? text "RACES" 
+04E7:  13340??
+014F: stop timer  13608??
+0003: shake camera  2500&
+0565: create temporary explosion fire  69.42! -371.249!  30.28!  2?
+020C: create explosion with radius  1? at  69.42! -371.249!  30.28!
+03B6: replace model at  117.991! -362.461!  10.179! radius  80! from -127? (BLDNGST2MESH) to -126? (BLDNGST2MESHDAM)
+04DB: (unknown)
+8056:   NOT   player $PLAYER_CHAR  0? ()in rectangle  12@  13@  14@  15@
+8117:   NOT   player $PLAYER_CHAR wasted
+00E5:   player $PLAYER_CHAR  0? ()near point in car  13984??  13988?? radius  10!  15!
+0193: set actor  5@ objective to act like ped
+0548:   unknown player $PLAYER_CHAR near peds #HNA or #HNB radius  10!  10!  10!
+038C: object  14008?? scatter  6396??  6400??  6404??
+8471:   NOT   unknown actor $PLAYER_ACTOR near object  14008?? radius  15!  15! unknown  0?
+82CC:   NOT   unknown object  14008?? bounding sphere visible
+83CE:   NOT   car  13980?? stuck
+018F:   unknown car check  13980??
+8366:   NOT (unknown)  7236?? 
+0194: set actor  14068?? objective to go to point  388.3! -473.9!  11.34!
+8101:   NOT   actor  14040?? stopped near point -829.62! -898.8!  10.11! radius  3!  3!  6! sphere  492??
+02B4:   player $PLAYER_CHAR in cube on foot  393.174! -470.686!  10!  386.992! -478.052!  15! radius  8.2! sphere  0?
+82B4:   NOT   player $PLAYER_CHAR in cube on foot  376.66! -453.85!  9!  328.91! -504.02!  20! radius  50! sphere  0?
+00EA:   player $PLAYER_CHAR  0? ()near actor on foot  14068?? radius  2!  2!
+02B5:   player $PLAYER_CHAR in cube in car  393.174! -470.686!  10!  386.992! -478.052!  15! radius  8.2! sphere  0?
+8339:   NOT   objects in cube  380! -491.64!  8!  375.62! -493.57!  16!  0?  1?  1?  0?  0?
+017A: set player $PLAYER_CHAR weapon  17? ammo to  100?
+014E: set timer to  14708?? type  1?
+0032:    1228.7! >=  14812??  \\ floating-point values
+0030:    14812?? >=  1236.5!  \\ floating-point values
+03D6: remove big text "BJM2 6" 
+0070:  15640?? /=  15876??  \\ integer values
+042F: save record  0?  15872??
+039C: (unknown)  15984??  1? 
+0423: unknown car  15984?? amount  1.5!
+03ED: (unknown)  15984??  1? 
+0496:   unknown car check  15984??  4?
+0166: set marker  16328?? brightness to  1?
+84C9:   NOT $PLAYER_CHAR
+82CA:   NOT   car  15984?? bounding sphere visible
+039F: car  15984?? race to  16008??  16012??
+024F: create corona  5.5!  6?  0? with color  255&  0?  0? at point  16040??  16044??  16048??
+0221: set player $PLAYER_CHAR trapped in car  1?
+042E:  1?  16384??
+02FD: text 2numbers lowpriority "RACETM"  16376??  16384??  5000& ms  1? 
+04D3: unknown race stuff  16068??  16072??  16076??  2?  16068??  16072??  16076??
+81F4:   NOT   car  16540?? flipped
+059B:  16540??
+0157: camera on player $PLAYER_CHAR  15?  2?
+0469: unknown create actor  16472?? in area -919.5! -329.8! -901.5! -351.45! unknown  0?  1?  0?  0?  0?
+0503: create gas smoke -907.307! -336.618!  26!
+01CB: actor  16428?? kill actor  16516??
+034E: unknown move object  7172?? to -837.134! -901.672!  12.03! unknown angle  0!  0!  .025!  0?
+0437: scatter particle  23?  .3! at  16684??  16688??  16692??  16696??  16700??  16704??
+0428: unknown car  16904?? flag  1?
+03D3: point  17292??  17296??  17300?? get nearby vector  17292??  17296??  17300??  17312??
+840C:   NOT   is german game
+0574:  16904??  1?
+0327:  16952?? = create car -1? in area  17292??  17296??  17304??  17308??
+840B:   NOT   is french game
+03FD: set player $PLAYER_CHAR handling responsiveness  17440??
+052C: set player $PLAYER_CHAR drunk visuals  255&
+01B0:   car  17368?? stopped  1? (in-sphere)near point -871.6! -469.5!  9.9! radius  7!  7!  7!
+053C:  17488??  0?
+01E9:  17580?? = car  17516?? num passengers
+01D1: actor  17488?? follow actor $PLAYER_ACTOR
+8449:   NOT   actor  17492?? in a car
+01EA:  17548?? = car  17484?? max passengers
+0165: set marker  17632?? color to  2?
+03F5: unknown prepare car  17624?? for explosion flag  1?
+055A:  1?
+04C5:  17820??
+0253: (unknown)
+0254: (unknown)
+0507:  1?
+834D:   NOT unknown rotate object  7220?? unknown angle  360!  1!  0?
+00C1:  18116?? = minutes to current time  7?  0?
+0540: unknown player $PLAYER_CHAR window washer credibility  0?
+0523:   unknown glass window at  459.9!  1004.1!  19.7! broken
+84AA:   NOT $PLAYER_CHAR
+00F3:   actor  18416?? near actor on foot  18424?? radius  5!  5!  0?
+04E1:  18448??
+04BD: unknown car  18452??  1?
+00A3:   actor $LANCE_VANCE  0? ()in rectangle  466.1!  325.5!  448.1!  339.2!
+02F2: unknown actor  18572?? flag  1?
+0361: close garage  2760??
+83B1:   NOT   garage  2760?? door closed
+0591: unknown clear birds from airspace  466.1!  325.5!  448.1!  339.2!
+83B0:   NOT   garage  2760?? door open
+04C0: unknown line  556.5!  763.3!  10.2!  538.5!  763.3!  10.2!
+0579: $PLAYER_ACTOR
+04C1: unknown  0?  18720??  3?  0?  18732??  1?
+0556: unknown -1047.664! -298.188!  11!  266.28!  512.591! -74.9!  9.573!  189.24!
+0557: (unknown)
+0480:   unknown actor  18784?? pedgroup  11?
+002F:    17@ >=  19140??  \\ integer values
+0587:  19164??  0?
+0588:  19196??  0?
+8043:   NOT    2@ ==  0!  \\ floating-point values
+046B: unknown actor  19172?? car  19148??
+831F:   NOT   unknown actor  19180?? unknown actor  19172??
+0100:   actor  19200?? near point in car -649.6716! -1590.727!  40! radius  5!  5!  5! sphere  0?
+8431:   NOT unknown car  19152?? flag  19252??
+02F8: unknown car  19152?? unknown cosine  27904??
+02F9: unknown car  19152?? unknown sinus  27908??
+0027:    4@ >  27916??  \\ floating-point values only
+0077:  5@ /=  19456??  \\ floating-point values
+01FE:   player $PLAYER_CHAR near car in car  19152?? radius  20!  20!  0?
+81C1:   NOT   car  19152?? stopped
+000B:  12@ +=  3!  \\ floating-point values
+00A4:   actor  19200??  0? ()in cube -991.591!  261.036!  7.775! -983!  271.96!  11.506!
+0450: car  19520?? warp to player
+0529: unknown add  2540?? to money spent on property stats
+0542: add property  1? to property own stats
+03EA: (unknown)  1? 
+80F2:   NOT   actor  19580?? near actor  19588?? radius  20!  20!  0?
+031F:   unknown actor  19588?? unknown actor  19580??
+0431: unknown car  19584?? flag  0?
+0571:  19580??
+046D:  27592?? = unknown actor  19476?? car car seats
+0549:  20108??
+80A4:   NOT   actor  20108??  0? ()in cube -386.507! -600.089!  24.286! -370.542! -583.413!  31.667!
+0451: load end of game audio
+043F: play cutscene music
+0434: show credits
+8436:   NOT   reached end of credits
+0435: end credits
+0440: stop cutscene music
+04D8:  20540??  0?
+0546:   unknown player $PLAYER_CHAR angel bike  20576??
+00DD:   actor  20540?? driving vehicle type #ANGEL
+04AD:  21024??
+04BF:  21108?? = unknown player $PLAYER_CHAR chaos level
+04BE: unknown reset player $PLAYER_CHAR chaos level
+0294: unknown car  21128?? flag  0?
+81B0:   NOT   car  21128?? stopped  492?? (in-sphere)near point -596.63!  658.2!  10.06! radius  4!  4!  4!
+02CA:   car  21128?? bounding sphere visible
+0102:   actor  21140?? stopped near point on foot -693.58!  1213.18!  23.16! radius  1!  1!  2! sphere  0?
+035F: (unknown)  22044??  100? 
+0573:  22044??  1?
+8443:   NOT   player $PLAYER_CHAR in a car
+80F7:   NOT   player $PLAYER_CHAR  1? (in-sphere)near point in car -1072.6!  70.3!  10.2! radius  4!  4!  4!
+8126:   NOT   actor $PLAYER_ACTOR walking
+0297: clear rampage kills
+0298:  22256?? = rampage kills #CBA
+8490:   NOT   player $PLAYER_CHAR has weapon  26?
+0137:   car  22604?? id == #VOODOO
+02D5:   player $PLAYER_CHAR firing weapons in rectangle -1208.7!  42.5! -1077.4!  126!  0?
+00B0:   car  22612??  0? ()in rectangle -1135.2!  73.2! -1130.8!  67.9!
+80E4:   NOT   player $PLAYER_CHAR  0? ()near point on foot  23356??  23360?? radius  3!  3!
+8241:   NOT   player $PLAYER_CHAR in remote mode
+81FE:   NOT   player $PLAYER_CHAR near car in car  23532?? radius  450!  700!  0?
+83CA:   NOT   object  23540?? exists
+03CA:   object  23544?? exists
+04EA:   unknown object  23544?? in cube -554.2964! -277.5887!  0! -492.513! -212.6366!  20! unknown  0?
+000E:  1@ -=  100?  \\ integer values
+0509: unknown  24340?? = distance between point  24280??  24284?? and point  24316??  24320??
+0122:   player $PLAYER_CHAR pressing horn
+0396:  1? (set) useless flag
+01CF: unknown actor  24900?? actor  24612??
+0331: unknown player $PLAYER_CHAR set fast reload  1?
+0533:  1?
+8495:   NOT   unknown car check  25252??
+831E:   NOT   unknown vehicle check  25252?? unknown  47?
+831D:   NOT   actor  25248?? hit by weapon  47?
+037E:   unknown cube checking -30.3157! -896.563!  17.36755! -55.192! -880!  37.84!
+850D:   NOT  25372??
+009C: set actor  25632?? wander path to -1?
+0114: set actor  25916?? car weapon  23? ammo to  3000&
+8122:   NOT   player $PLAYER_CHAR pressing horn
+0593:  0@  1?
+0563: $PLAYER_CHAR  300&  524805&&  1?
+801A:   NOT    1? >  26740??  \\ integer values
+0551:  1?
+0216: set car  26836?? taxi available light to  1? (on)
+02DD: set actor  26844?? creation zone "VICE C"  1?  1?  1?
+0365: set actor  26844?? objective to 29
+80FD:   NOT   player $PLAYER_CHAR  0? ()near actor  26844?? in car radius  7!  7!  2!
+001F:    17@ >  26888??  \\ integer values
+0315: increment taxi dropoffs
+0572: set taxi boost jump  1?
+036D: text 2numbers styled "IN ROW"  26848??  26892??  5000& ms  6? 
+0316: save taxi earnings from  26860??
+0403: save highest ambulance level  27024??
+0330: set player $PLAYER_CHAR infinite run to  1? (true)
+03A3: (unknown)  27140?? 
+00FD:   player $PLAYER_CHAR  0? ()near actor  27140?? in car radius  10!  10!  2!
+80EB:   NOT   player $PLAYER_CHAR  0? ()near actor in car  27140?? radius  20!  20!
+0401: increment people saved in ambulance
+04B9: unknown stuff  27768??  27772??  10!  12!  500!  27768??  27772??  27776??  27780??  27784??  27788??  1788??
+0325:  27256?? = create car  1@ fire
+0560:  1@  5@
+0154:   actor  5@ in zone "VICE C"
+0384: text 1string "F START" "VICE C"  5000& ms  1? 
+82D0:   NOT   fire  27252?? extinguished
+045F: unknown car  0@  4?
+0326:  27268?? = create actor  4@ fire
+02D0:   fire  27268?? extinguished
+0404: increment fires extinguished
+02D1: unknown remove fire  27268??
+055D: make player $PLAYER_CHAR fireproof  1?
+0599:  27392??
+048B: unknown car  27504?? timer  27572??
+04F1:   unknown car check  27504??
+03AA: play suspect last seen at  27816??  27820??  1788??
+0402: increment criminals stopped
+0578:  27752??
+801C:   NOT    27592?? >  19756??  \\ integer values
+0433: (unknown)  27564??  1? 
+057E:  1?
+0581:  0?
+03F0: (unknown)  1? 
+0582:  0?  29764??
+033F: set text draw letter width height  .8!  2!
+0340: set text draw color  0?  0?  0?  255&
+045B: text draw 2numbers  32!  232! "HOTR 15"  29828??  29832?? 
+033E: text draw  32!  302! "HOTR 19" 
+045A: text draw 1number  32!  317! "HOTR 26"  6384?? 
+0341: unknown text stuff  1?
+03E4: unknown text stuff  0?
+0343: set text linewidth  500!
+0348: (unknown)  1? 
+0342: (unknown)  0? 
+0345: (unknown)  0? 
+0414: (unknown) $PLAYER_CHAR  1? 
+016E: override restart at -1102.4!  1331.2!  19!  271.2!
+032C: car  28640?? ram  28644??
+0544: unknown bloodring stuff  28796??
+01F6: cancel override restart
+0543:  28780??
+04D5: unknown race stuff  29932??  29936??  29940??  5.5!  6?  0?  150&  0?  0?
+0383:   player  31324?? car horn activated == true
+058F: unknown create distribution actor  31356?? at  31340??  31344?? or at  31348??  31352?? flag  1?  0?  1?
+0580:  31360?? = distribution mission status distribution actor  31356?? distribution car  31324??
+0586:  31356??
+058B:  31356??
+0536:  31420??
+0501: unknown pizza mission command player $PLAYER_CHAR flag  0?
+0534:  32080??
+0472:   unknown actor  32056?? near pizza  31904?? radius  2!  2! unknown  0?
+80B0:   NOT   car  32192??  0? ()in rectangle -1881.576! -1612.496! -979.9678! -582.2634!
+010C: change player into rc buggy $PLAYER_CHAR at  739.924!  712.5853!  11.1484!  262.9725!
+04D6:  0?
+04D2: unknown RC car  33836?? race to  33748??  33752??  33756??  30?

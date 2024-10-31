@@ -1,0 +1,8 @@
+This programs requires D3DX81ab.dll by Tim Baumgarten
+http://www.crazyentertainment.net
+© 1999-2000
+
+Copy the D3DX81ab.dll file into the \Windows\System32\ directory.
+
+
+gtawip.com was here

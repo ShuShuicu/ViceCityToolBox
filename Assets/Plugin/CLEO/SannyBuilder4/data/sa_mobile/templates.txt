@@ -1,0 +1,21 @@
+cleo=CLEO script
+={$CLEO .csa}
+=nop
+=
+=|
+=
+=terminate_this_script
+
+load=model request and load
+=request_model #|
+=
+=while not has_model_loaded #
+=  wait 0
+=end
+
+def=Check if player is playing
+=if
+=  is_player_playing 0
+=then
+=
+=end

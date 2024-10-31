@@ -1,0 +1,14 @@
+
+
+{$CLEO .cs}
+thread 'IVISION'
+wait 1000
+00BF: 1@ = current_time_hours, 0@ = current_time_minutes
+
+if
+    1@ > 17
+then
+    08B2: set_infrared_vision 1
+end
+
+0A93: end_custom_thread

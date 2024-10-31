@@ -1,0 +1,17 @@
+
+
+{$CLEO .cs}
+thread 'IVISION'
+
+
+while true
+    wait 0
+    if
+        0AB0:   key_pressed 73// 	i key
+    then
+        08B2: set_infrared_vision 1
+    else    
+        08B2: set_infrared_vision 0
+    end
+end
+

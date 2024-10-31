@@ -1,0 +1,35 @@
+{$CLEO .cs}
+thread 'Tai_Chi'
+
+while true
+wait 0
+    if
+        0256:   player $PLAYER_CHAR defined
+    then
+        if
+            0AB0:   key_pressed 8//-----------------key = Backspace
+        then
+            04ED: load_animation "PARK"
+        
+            while 84EE:  not animation "PARK" loaded
+                wait 0
+            end
+            0812: AS_actor $PLAYER_ACTOR perform_animation "Tai_Chi_Loop" IFP_file "PARK" 1.0 loopA 1 lockX 1 lockY 1 lockF 0 time -1 // versionB
+            wait 1000
+            
+            while 0256:   player $PLAYER_CHAR defined
+                wait 0
+                if or
+                    0AB0:   key_pressed 8//-----------------key = Backspace
+                    00E1:   player 0 pressed_key 15// --- key = Enter/Exit
+                then
+                    break
+                end    
+            end
+           
+            0792: disembark_instantly_actor $PLAYER_ACTOR
+            04EF: release_animation "PARK" 
+            wait 1000
+        end
+    end
+end

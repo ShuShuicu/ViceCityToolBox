@@ -1,0 +1,13 @@
+06:50:18 [INFO] core library loaded
+06:50:18 [ERROR] Error converting C string to Rust string: invalid utf-8 sequence of 1 bytes from index 8
+06:50:18 [ERROR] Error converting C string to Rust string: invalid utf-8 sequence of 1 bytes from index 8
+06:50:18 [ERROR] Error converting C string to Rust string: invalid utf-8 sequence of 1 bytes from index 8
+06:50:18 [ERROR] Error converting C string to Rust string: invalid utf-8 sequence of 1 bytes from index 8
+06:50:18 [ERROR] Error converting C string to Rust string: invalid utf-8 sequence of 1 bytes from index 8
+06:50:18 [ERROR] Error converting C string to Rust string: invalid utf-8 sequence of 1 bytes from index 8
+06:50:18 [ERROR] Error converting C string to Rust string: invalid utf-8 sequence of 1 bytes from index 8
+06:50:18 [INFO] Performing cleanup on current directory
+06:50:20 [INFO] Loading IDE file \data\default.dat
+06:50:20 [WARN] File \data\default.dat not found
+06:50:20 [INFO] Loading IDE file \data\maps\veh_mods\veh_mods.ide
+06:50:20 [WARN] File \data\maps\veh_mods\veh_mods.ide not found

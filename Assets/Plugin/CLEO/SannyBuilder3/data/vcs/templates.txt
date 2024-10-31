@@ -1,0 +1,16 @@
+load=model request and load
+=0160: request_model #|
+=
+=while 8161:   not has_model_loaded #
+= wait 0
+=end
+
+scm=Multifile template (VCS)
+=DEFINE MISSIONS 0
+=//DEFINE MISSION {ID} 0 AT {LABEL} @
+=
+=|
+=
+=while true
+=  0001: wait 250
+=end

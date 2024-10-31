@@ -1,0 +1,44 @@
+{$CLEO .cs}
+:SearchLight_on_car
+thread 'CARBEAM'
+
+while true
+    wait 0 
+    if 
+        Player.Defined($PLAYER_CHAR)
+    then
+        if 
+            Actor.Driving($PLAYER_ACTOR)
+        then
+            03C0: 0@ = actor $PLAYER_ACTOR car
+            0407: store_coords_to 11@ 12@ 13@ from_car 0@ with_offset 0.0 5.0 -0.5 
+            06C1: create_searchlight 20@ on_car 0@ with_offset 0.0 0.0 2.5 radius 0.2 target 11@ 12@ 13@ radius 12.0
+            06B4: set_searchlight 20@ path_between 11@ 12@ 13@ and 11@ 12@ 13@ speed 2.5 
+            
+            while Player.Defined($PLAYER_CHAR)
+                wait 0
+                if and
+                    not Car.Wrecked(0@)
+                    8AB0:   not key_pressed 48 // <-- press 0 to cancel searchlight
+                then
+                    gosub @SearchLight_coords_1
+                else
+                    break
+                end
+                if
+                    8202: not  actor $PLAYER_ACTOR near_car 0@ radius 50.0 50.0 flag 0
+                then
+                    break
+                end                
+            end
+            
+            06B2: destroy_searchlight 20@
+            wait 1000
+        end
+    end
+end
+
+:SearchLight_coords_1
+0407: store_coords_to 11@ 12@ 13@ from_car 0@ with_offset 0.0 5.0 -0.5 
+06B4: set_searchlight 20@ path_between 11@ 12@ 13@ and 11@ 12@ 13@ speed 15.5
+return

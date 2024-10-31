@@ -1,0 +1,29 @@
+load=model request and load
+=0160: request_model #|
+=
+=while 8161:   not has_model_loaded #
+= wait 0
+=end
+
+scm=Multifile template (VCS)
+=DEFINE MISSIONS 0
+=//DEFINE MISSION {ID} 0 AT {LABEL} @
+=
+=|
+=
+=while true
+=  0001: wait 250
+=end
+
+bthold=Hold ingame button template
+=if // Insert the number of the ingame button to hold below
+=	007F:   is_button_pressed 0 button |
+=then
+=	if // Insert the intended milliseconds threshold below
+=		timera > 
+=	then
+=		
+=	end
+=else
+=	timera = 0
+=end // if

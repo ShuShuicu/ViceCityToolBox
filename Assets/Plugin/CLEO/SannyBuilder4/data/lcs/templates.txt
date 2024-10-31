@@ -1,0 +1,36 @@
+load=model request and load
+=024C: request_model #|
+=
+=while 824D:   not has_model_loaded #
+=  wait 0 ms
+=end
+
+def=Check if player is playing
+=if
+=  025B:   is_player_playing $PLAYER_CHAR
+=then
+=
+=end
+
+scm=Multifile template (LCS)
+=DEFINE MISSIONS 0
+=//DEFINE MISSION {ID} 0 AT {LABEL} @
+=
+=|
+=
+=while true
+=  0001: wait 250
+=end
+
+bthold=Hold ingame button template
+=if // Insert the number of the ingame button to hold below
+=	00E6:   is_button_pressed 0 button |
+=then
+=	if // Insert the intended milliseconds threshold below
+=		timera > 
+=	then
+=		
+=	end
+=else
+=	timera = 0
+=end // if

@@ -1,0 +1,25 @@
+
+This list was taked (not stolen) from a post
+made by spinnie on GTAForums.com.
+
+Garage ID - Description
+1 - Placeholder, DummyID. (doesn't do anything,
+    initial garages get 1, and change type when
+    a certain asset is bought)
+3 - BombShop (8ball)
+5 - Pay and Spray
+7 - Car Eater, haven't got a clue what this is
+    suppose to be, not sunshine autos anyways...
+8 - Sunshines Autos Carshop, List 1
+9 - Sunshines Autos Carshop, List 2
+10 - Sunshines Autos Carshop, List 3
+13 - DO NOT USE, CORRUPTS SAVEGAMES!
+16..18 - In use Saving Garages
+19 - Garage where you beat the cops up during
+     "Copland"
+22 - Sunshines Autos Carshop, List 4
+23 - Garage to park the tank in during "Sir, Yes
+     Sir!"
+24..31 - In use Saving Garages
+32 - Unused Saving Garage
+

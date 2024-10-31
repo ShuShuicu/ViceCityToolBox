@@ -1,0 +1,45 @@
+My tested key_press numbers in Vice. Returned by
+
+00E1:   key_pressed  0? <number tested>?
+
+with standard controls setup. Made from
+ghost_master2000's list.
+
+
+Number        On Foot                 In Car
+----------------------------------------------
+2             turn left/right         Look left + turret L and Look right + turret R
+3                                     turret up/down
+4             action key              Radio
+5             prev. weapon            look left/behind
+6             aim/target              handbrake
+7             next weapon             look right/behind
+8             forward
+9             backward
+10            strafe left             turn left
+11            strafe right            turn right
+13            camera                  camera
+14            jump                    brake/reverse
+15            enter vehicle           exit vehicle
+16            sprint                  gas/forward
+17            shoot/attack            shoot
+18            crouch                  horn
+19            look behind             sub-mission
+
+
+--------------------------------------------------
+
+
+With classic setup
+
+Number        On Foot                 In Car
+----------------------------------------------
+3             Look left and right     turret up/down
+
+
+In certain situations like when then lock_actor code is used, keypress number 12 is used. I don't know how to set that key up.
+
+Number        On Foot                 In Car
+----------------------------------------------
+12            Used to exit certain modes
+

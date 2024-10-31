@@ -1,0 +1,56 @@
+thread 'MAIN'
+ var
+  $PLAYER_CHAR: Player 
+ end // var
+01F0: set_max_wanted_level_to 6
+set_wb_check_to 0 
+00C0: set_current_time 8 0 
+04E4: unknown_refresh_game_renderer_at 2488.5601 -1666.84 
+Camera.SetAtPos(2488.5601, -1666.84, 13.38)
+$PLAYER_CHAR = Player.Create(#NULL, 2488.5601, -1666.84, 13.38)
+$PLAYER_ACTOR = Actor.EmulateFromPlayer($PLAYER_CHAR)
+Camera.SetBehindPlayer
+set_weather 0          
+wait 0
+$PLAYER_CHAR.SetClothes("PLAYER_FACE", "HEAD", Head)
+$PLAYER_CHAR.SetClothes("JEANSDENIM", "JEANS", Legs)
+$PLAYER_CHAR.SetClothes("SNEAKERBINCBLK", "SNEAKER", Shoes)
+$PLAYER_CHAR.SetClothes("VEST", "VEST", Torso)
+$PLAYER_CHAR.Build
+$PLAYER_CHAR.CanMove = True
+fade 1 (out) 0 ms                     
+select_interior 0
+016C: restart_if_wasted at 2027.77 -1420.52 15.99 angle 137.0 unknown 0
+016D: restart_if_busted at 1550.68 -1675.49 14.51 angle 90.0 unknown 0
+03C4: set_status_text_to $var 0 'ZER2_43'  // Score ~1~
+create_thread @example02 25 // thread created with a parameter passed in
+end_thread
+
+:example02
+thread "example02"
+ var
+  0@: Integer
+ end // var
+
+// this loop will work until ...
+for $var = -10 to 10
+if $var >= 0 
+then if $var == 7 // ... this check ...
+ then break // ... break it
+ end // if
+ else
+  while $var <> 0
+    Inc($var)     
+  end // while
+ end // if
+end // for
+
+// so as $var = 7 ...
+repeat
+ inc($var) // ... increment its value ...
+ wait 250
+until $var == 0@ // ... until it doesn't equal to 25 (parameter passed with the create_thread command)
+
+// now $var = 25
+Inc($PLAYER_CHAR.Money,$var) // $PLAYER_CHAR.Money+=25
+end_thread

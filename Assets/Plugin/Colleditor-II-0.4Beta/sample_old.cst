@@ -1,0 +1,22 @@
+# GTA Collision Script Exporter version 1.5 by Steve M.
+# Web: http://www.steve-m.com   E-Mail: support@steve-m.com
+# Exported 19.08.2005 22:44:54
+
+=> Spheres:
+S 0: 0.5  |  0.0; 0.0; 3.0  |  [0]
+
+=> Boxes:
+B 0: -1.0; -1.0; 0.0  |  1.0; 1.0; 2.0  |  [0]
+
+=> Vertex Count: 5
+V 0: -1.0; -1.0; 2.0
+V 1: 1.0; -1.0; 2.0
+V 2: -1.0; 1.0; 2.0
+V 3: 1.0; 1.0; 2.0
+V 4: 0.0; 0.0; 3.0
+
+=> Face Count: 4
+F 0: 0; 4; 1  |  [0]
+F 1: 1; 4; 3  |  [1]
+F 2: 3; 4; 2  |  [2]
+F 3: 2; 4; 0  |  [3]

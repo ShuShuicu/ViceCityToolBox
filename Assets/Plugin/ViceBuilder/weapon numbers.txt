@@ -1,0 +1,55 @@
+Tested and confirmed weapon numbers returned by
+031D:   actor  <actor> hit_by_weapon <weapon number>
+
+N=Weapon number in mission script
+G=Weapon Group
+W=Name in Weapon.dat
+#=Name in Mission Builder and default.ide  (Weapon model id)
+
+N  G  W                #
+0     Unarmed
+1     BrassKnuckle     #brassknuckle   
+2     ScrewDriver      #screwdriver    
+3     GolfClub         #golfclub       
+4     NightStick       #nitestick      
+5     Knife            #knifecur       
+6     BaseballBat      #bat            
+7     Hammer           #hammer         
+8     Cleaver          #cleaver        
+9     Machete          #machete        
+10    Katana           #katana         
+11    Chainsaw         #chnsaw         
+
+12 2  Grenade          #grenade   (returns nothing)
+13 2  DetonateGrenade  #bomb      (returns nothing)
+14 2  TearGas          #teargas   (returns nothing)
+15 2  Molotov          #molotov   (Molotov returns 31 if actor burns to death)
+16 2  Rocket           #missile   (not rocketlauncher)
+
+17 3  Colt45           #colt45     
+18 3  Python           #python     
+
+19 4  Shotgun          #chromegun  
+20 4  Spas12Shotgun    #shotgspa   
+21 4  StubbyShotgun    #buddyshot  
+
+22 5  Tec9             #tec9       
+23 5  Uzi  C           #uzi        
+24 5  SilencedIngram   #ingramsl   
+25 5  Mp5              #mp5lng     
+
+26 6  m4               #m4         
+27 6  Ruger            #ruger      
+
+30 7  RocketLauncher   #rocketla  (returns nothing)
+31 7  FlameThrower     #flame     
+32 7  M60              #M60       
+33 7  Minigun          #minigun   
+35 7  HeliCannon
+
+28 8  SniperRifle      #sniper
+29 8  LaserScope       #laser
+
+34 9  Detonator
+36 9  Camera           #camera   (returns nothing)
+

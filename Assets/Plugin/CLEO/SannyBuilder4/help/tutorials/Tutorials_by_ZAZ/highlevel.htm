@@ -1,0 +1,436 @@
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-de">
+
+<head>
+<title>Unbenanntes Dokument</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+<body>
+<table width="95%" height="3459" border="1" cellpadding="5" cellspacing="5">
+  <tr> 
+    <td width="77%" height="387" bgcolor="#E2E2E2"> <h1><strong>SYNTAX</strong></h1>
+      <p> <strong><font color="#FF3300" size="4"> <font size="5">["Open"</font> 
+        COMMAND<font size="5">]</font>... <font size="5">["Close"</font> COMMAND<font size="5">]</font></font></strong></p>
+      <p><strong><font size="3">There're several "Open" commands as well as several 
+        operators, especially conditions and allways does it need to close the 
+        function by a "Close" command</font></strong></p>
+      <p><strong>END = ["Close" COMMAND]</strong></p>
+      <p><strong> the construct of commands must always be closed by END<br />
+        unless for a few exeptions with another </strong>"Close" COMMAND</p>
+      <p>&nbsp;</p>
+      <h2><strong> LOOP Construct:</strong></h2>
+      <p>A loop is a statement which allows code to be repeatedly executed<br />
+        We use following as standart main loop 
+      <p><strong><font color="#990099" size="4">WHILE ["Open" COMMAND] true [loop-condition]<br />
+        ...<br />
+        END ["Close" COMMAND]</font></strong></p>
+      <p><strong>Important rule for gta engine:<br />
+        Every loop must have a wait of at least 0, as the rest of the game is 
+        processed and rendered during those waits </strong></p>
+      <p><strong>WHILE ["Open" COMMAND] true [loop-condition]<br />
+        <font color="#993399" size="4">wait 0</font><br />
+        END ["Close" COMMAND] </strong></p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <h2><strong>CONDITIONAL CHECK Construct </strong></h2>
+      <p><strong>There is the operator IF to evaluate the condition. </strong></p>
+      <p><strong><font color="#993399" size="4">IF ["Open" COMMAND] <br />
+        .. <br />
+        THEN<br />
+        .. <br />
+        END ["Close" COMMAND]</font></strong></p>
+      <p>&nbsp;</p>
+      <p><strong> A condition is created by the rules described above. </strong></p>
+      <p><strong>After the word THEN, you have to specify the command(-s) that 
+        are executed if the condition is true.</strong></p>
+      <p><strong> <font color="#990099" size="4">IF..THEN..END</font> </strong></p>
+      <p><strong>After the word ELSE, you have to specify the command(-s) that 
+        are executed if the condition is false. </strong></p>
+      <p><strong><font color="#990099" size="4">IF..THEN..ELSE..END </font></strong></p>
+      <p>&nbsp;</p></td>
+  </tr>
+  <tr> 
+    <td height="148" bgcolor="#E2E2E2"><p>&nbsp;</p>
+      <p><strong>Let's write a simple script<br />
+        The plan: if player spawn at gameload between 18:00 and midnight, then 
+        enables infrared_vision<br />
+        ____<br />
+        </strong> </p>
+      <p><strong>Opcode 00BF: returns the game time, we only need to check the 
+        hours = 1@</strong></p>
+      <p><strong>The running thread instance will be terminated after one second 
+        by 0A93: end_custom_thread </strong></p>
+      <p><strong>The construct for conditional check:</strong></p>
+      <p><strong> if<br />
+        then<br />
+        end<br />
+        </strong></p></td>
+  </tr>
+  <tr> 
+    <td height="148" bgcolor="#FFFFFF"><blockquote> 
+        <pre><code><font size="4">{$CLEO .cs}
+thread 'IVISION'
+wait 1000
+00BF: 1@ = current_time_hours, 0@ = current_time_minutes
+
+if
+    1@ > 17
+then
+    08B2: set_infrared_vision 1
+end
+
+0A93: end_custom_thread</font>
+	</code></pre>
+      </blockquote></td>
+  </tr>
+  <tr> 
+    <td height="148" bgcolor="#E1E1E1"> <h2><strong> LOOP Construct:</strong></h2>
+      <p>Basic loop cunstruct instead of end_custom_thread</p>
+      <p>WHILE true<br />
+        ...<br />
+        END</strong></p>
+      <p>Script example below displays the internal timer on screen</p>
+      <p>only three codes inside the loop<br />
+        <font color="#993399"><strong>wait 0</strong></font> as first<br />
+        then two codes for displaying the timer value</p></td>
+  </tr>
+  <tr> 
+    <td height="148" bgcolor="#FFFFFF"><blockquote> 
+        <pre><code><font size="4">
+{$CLEO .cs}
+thread 'timer'
+33@ = 0
+
+while true
+    wait 0
+    03F0: enable_text_draw 1 
+    045A: draw_text_1number 100.0  200.0 GXT 'NUMBER' number 33@
+end</font>
+	</code></pre>
+      </blockquote></td>
+  </tr>
+  <tr> 
+    <td height="148" bgcolor="#E1E1E1"> <h2><strong> LOOP Construct:</strong></h2>
+      <p>Basic loop and one conditional check </p>
+      <p>if internal timer is bigger than 7000, <br />
+        then reset timer to 0 </p>
+      <p>&nbsp;</p>
+      <p>After the word THEN, you have to specify the command(-s) that are executed 
+        if the condition is true. <br />
+IF..THEN..END </p>
+      <p>After the word ELSE, you have to specify the command(-s) that are executed 
+        if the condition is false. <br />
+IF..THEN..ELSE..END</p>
+      <p>Script example below displays the internal timer on screen</p>
+      <p>only three codes inside the loop<br />
+        wait 0 as first<br />
+        then two codes for displaying the timer value</p></td>
+  </tr>
+  <tr> 
+    <td height="148" bgcolor="#FFFFFF"><blockquote> 
+        <pre><code><font size="4">
+{$CLEO .cs}
+thread 'timer'
+while true
+    wait 0
+    03F0: enable_text_draw 1 
+    045A: draw_text_1number 100.0  200.0 GXT 'NUMBER' number 33@
+    if
+        33@ > 7000
+    then
+        33@ = 0
+    end
+end</font>
+	</code></pre>
+      </blockquote></td>
+  </tr>
+  <tr> 
+    <td height="148" bgcolor="#E2E2E2"> <blockquote> 
+        <pre><font size="3"><code>
+The local variables 32@ and 33@ are reserved for the use as internal timer that counts permanently up in milliseconds
+They can't be used for anything else, but we can restore it to 0 and then check if specified time goes by
+
+if
+    33@ > 7000
+then
+    33@ = 0
+end
+	</code></font></pre>
+      </blockquote></td>
+  </tr>
+  <tr> 
+    <td height="148" bgcolor="#E1E1E1"> <h2>extend the conditional check by argument 
+        "else"</h2>
+      <p><strong> if<br />
+        ..[condition] i key is pressed<br />
+        then<br />
+        ..[code]enables infrared_vision<br />
+        else<br />
+        ..[code]disables infrared_vision<br />
+        end</strong></p></td>
+  </tr>
+  <tr> 
+    <td height="148" bgcolor="#FFFFFF"><blockquote> 
+        <pre><code><font size="4">
+{$CLEO .cs}
+thread 'IVISION'
+
+
+while true
+    wait 0
+    if
+        0AB0:   key_pressed 73// 	i key
+    then
+        08B2: set_infrared_vision 1
+    else    
+        08B2: set_infrared_vision 0
+    end
+end</font>
+	</code></pre>
+      </blockquote></td>
+  </tr>
+  <tr> 
+    <td height="148" bgcolor="#E1E1E1"> <h2>&nbsp;</h2>
+      <h2>The Syntax allows to build constructs into each other</h2>
+	        
+      <p><font size="4">Each construct requires the END["Close" COMMAND] at right 
+        place to lock the right content in<br />
+it needs to close first the the construct of the deepest level, then 
+        these of the next upper level</font></p>
+	  </td>
+  </tr>
+  <tr> 
+    <td height="148" bgcolor="#FFFFFF"><blockquote> 
+        <pre><code><font size="4">
+while true
+    wait 0 
+    if 
+        0256:   player $PLAYER_CHAR defined
+    then
+        if
+        then
+        else 
+            if 
+            then
+            else 
+                if 
+                then
+                end        
+            end
+        end
+    end   
+end</font>
+	</code></pre>
+      </blockquote></td>
+  </tr>
+  <tr> 
+    <td height="148" bgcolor="#E0E0E0"> 
+
+      <p>Or collect conditional checks below of each other<br />
+        Example below does same as the one above additional with operator "OR"</p>
+      </td>
+  </tr>
+  <tr> 
+    <td height="148" bgcolor="#FFFFFF"><blockquote> 
+        <pre><code><font size="4">
+while true
+    wait 0 
+    if 
+        0256:   player $PLAYER_CHAR defined
+    then
+        if or
+        then
+        end    
+        if or
+        then
+        end        
+    end   
+end</font>
+	</code></pre>
+      </blockquote></td>
+  </tr>
+  <tr> 
+    <td height="148" bgcolor="#E1E1E1">
+      
+	  <p>&nbsp;</p>
+      <p>After the word THEN, you have to specify the command(-s) that are executed 
+        if the condition is true. <br />
+		IF..THEN..END </p>
+      <p>After the word ELSE, you have to specify the command(-s) that are executed 
+        if the condition is false. <br />
+		IF..THEN..ELSE..END </p>
+      <p>Script example below gives paintjob to car model blade and carcolor to 
+        car model ALPHA and BULLET <br />
+when player is driving specified car model</p>
+      <p>&nbsp;</p></td>
+  </tr>
+  <tr> 
+    <td height="148" bgcolor="#FFFFFF"><blockquote> 
+        <pre><code><font size="4">
+{$CLEO .cs}
+thread 'PAINT' 
+
+while true
+    wait 0 
+    if 
+        0256:   player $PLAYER_CHAR defined
+    then
+        if 
+            00DD:   actor $PLAYER_ACTOR driving_car_with_model #blade
+        then
+            03C0: 0@ = actor $PLAYER_ACTOR car
+            06ED: set_car 0@ paintjob 0
+            wait 1000
+            06ED: set_car 0@ paintjob 1
+            wait 1000
+        else 
+            if 
+                00DD:   actor $PLAYER_ACTOR driving_car_with_model #ALPHA
+            then
+                03C0: 0@ = actor $PLAYER_ACTOR car
+                0229: set_car 0@ primary_color_to 17 secondary_color_to 0
+                wait 1000
+            else 
+                if 
+                    00DD:   actor $PLAYER_ACTOR driving_car_with_model #BULLET
+                then
+                    03C0: 0@ = actor $PLAYER_ACTOR car
+                    0229: set_car 0@ primary_color_to 0 secondary_color_to 17
+                    wait 1000
+                end        
+            end
+        end
+        wait 5000
+    end   
+end</font>
+	</code></pre>
+      </blockquote></td>
+  </tr>
+  <tr> 
+    <td height="148" bgcolor="#E1E1E1">
+      
+	  <p>&nbsp;</p>
+      <p>The script can also be written in this way<br />
+        Now it gives paintjob to car model Blade, Remington and Savanna and carcolor to ALPHA, Infernus and BULLET <br />
+        when player is driving specified car model</p>
+      <p>CONDITIONAL CHECK can expand by logic operator OR or AND</p>
+      <p><br />
+        IF OR - conditions connected with the logic operator OR</p>
+      <p>IF AND - conditions connected with the logic operator AND</p>
+      <p>&nbsp;</p></td>
+  </tr>
+  <tr> 
+    <td height="148" bgcolor="#FFFFFF"><blockquote> 
+        <pre><code><font size="4">
+{$CLEO .cs}
+thread 'PAINT' 
+
+while true
+    wait 0 
+    if 
+        0256:   player $PLAYER_CHAR defined
+    then
+        if or
+            00DD:   actor $PLAYER_ACTOR driving_car_with_model #REMINGTN
+            00DD:   actor $PLAYER_ACTOR driving_car_with_model #blade
+            00DD:   actor $PLAYER_ACTOR driving_car_with_model #SAVANNA
+        then
+            03C0: 0@ = actor $PLAYER_ACTOR car
+            06ED: set_car 0@ paintjob 0
+            wait 1000
+            06ED: set_car 0@ paintjob 1
+            wait 1000 
+        end    
+        if or
+            00DD:   actor $PLAYER_ACTOR driving_car_with_model #BULLET
+            00DD:   actor $PLAYER_ACTOR driving_car_with_model #ALPHA
+            00DD:   actor $PLAYER_ACTOR driving_car_with_model #INFERNUS
+        then
+            03C0: 0@ = actor $PLAYER_ACTOR car
+            0229: set_car 0@ primary_color_to 0 secondary_color_to 17
+            wait 1000
+       
+        end        
+        wait 5000
+    end   
+end</font>
+	</code></pre>
+      </blockquote></td>
+  </tr>
+  <tr>
+    <td height="148" bgcolor="#E1E1E1">
+      
+<p>IF AND - conditions connected with the logic operator AND</p>
+        <p>IF OR - conditions connected with the logic operator OR</p>
+      
+
+      <p><br />
+        Next Script example gives paintjob and carcolor</p>
+		<p>when player is driving specified car model<br />
+		AND<br />
+		key is pressed</p>
+      <p>&nbsp;</p>
+	  </td>
+  </tr>
+  <tr> 
+    <td height="148" bgcolor="#FFFFFF"><blockquote> 
+        <pre><code><font size="4">
+{$CLEO .cs}
+thread 'PAINT' 
+
+while true
+    wait 0 
+    if 
+        0256:   player $PLAYER_CHAR defined
+    then
+        if  and
+            0AB0:   key_pressed 66// 	b key
+            00DD:   actor $PLAYER_ACTOR driving_car_with_model #blade
+        then
+            03C0: 0@ = actor $PLAYER_ACTOR car
+            06ED: set_car 0@ paintjob 0
+            wait 1000
+            06ED: set_car 0@ paintjob 1
+            wait 1000
+        else 
+            if  and
+                0AB0:   key_pressed 78// 	n key
+                00DD:   actor $PLAYER_ACTOR driving_car_with_model #ALPHA
+            then
+                03C0: 0@ = actor $PLAYER_ACTOR car
+                0229: set_car 0@ primary_color_to 17 secondary_color_to 0
+                wait 1000
+            end 
+            if  and
+                0AB0:   key_pressed 77// 	m key
+                00DD:   actor $PLAYER_ACTOR driving_car_with_model #BULLET
+            then
+                03C0: 0@ = actor $PLAYER_ACTOR car
+                0229: set_car 0@ primary_color_to 0 secondary_color_to 17
+                wait 1000
+            end        
+
+        end
+
+    end   
+end
+</font></code></pre>
+      </blockquote></td>
+  </tr>
+  <tr> 
+    <td height="148" bgcolor="#FFCC99">
+<blockquote> 
+        <pre><code><font size="4">
+<p>Homepage:	<a href="http://zazmahall.de/CLEO.htm" title="CLEO">www.zazmahall.de/index.htm</a>  <br />E-Mail:		zaz@zazmahall.de<br />13-Februar-2020</p> 
+</font></code></pre>
+      </blockquote></td>
+  </tr>
+</table>		
+</body>
+</html>

@@ -1,0 +1,30 @@
+{$CLEO .cs}
+:RandomActor_Cleo4
+thread 'RANDACT'
+
+while true
+wait 0
+    if
+        0256:   player $PLAYER_CHAR defined 
+    then
+        if   and
+            044B:   actor $PLAYER_ACTOR on_foot
+            00E1:   player 0 pressed_key 6//--- aim key
+        then    
+            04C4: store_coords_to 10@ 11@ 12@ from_actor $PLAYER_ACTOR with_offset 0.0 2.0 0.0
+            if
+                0AE1:   7@ = random_actor_near_point 10@ 11@ 12@ in_radius 8.0 find_next 0 pass_deads 1 // CLEO 4 opcode
+            then
+                if
+                    8118:   not actor 7@ dead 
+                then    
+                    if
+                        0457:   player $PLAYER_CHAR aiming_at_actor 7@
+                    then
+                        0321: AS_actor 7@ die_headshotted
+                    end
+                end
+            end
+        end
+    end
+end

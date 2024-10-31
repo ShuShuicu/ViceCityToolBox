@@ -1,0 +1,29 @@
+{$CLEO .cs}
+:HIGHLEVEL_LOOP_TEST
+thread 'HLEVEL'
+
+while true
+wait 0
+    if
+        0256:   player $PLAYER_CHAR defined
+    then
+        if
+            0AB0:   key_pressed 8
+        then    
+            33@ = 0
+            while true        
+                wait 0
+                03F0: enable_text_draw 1
+                045A: text_draw_1number  250.0  50.0 'NUMBER' 33@
+                if  or
+                    0AB0:   key_pressed 9//     TAB
+                    0AB0:   key_pressed 77// 	m key
+                    0AB0:   key_pressed 78// 	n key
+                then
+                    00BA: show_text_styled GXT 'fem_off' time 500 style 4
+                    break
+                end           
+            end                
+        end
+    end
+end

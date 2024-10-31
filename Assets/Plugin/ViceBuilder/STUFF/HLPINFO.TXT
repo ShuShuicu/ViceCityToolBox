@@ -1,0 +1,382 @@
+=======================================================
+POWERBASIC(tm) IDE
+Copyright 2000 - 2002, Bruce R Brown brbrown@alltel.net
+April 2002
+=======================================================
+============
+Introduction
+============
+This project began in 1999 as both a programming exercise and as a way to have a
+PB programming environment that met my personal needs. It is written in SDK style by
+preference and originally started under PBDLL5. This current version has been (mostly)
+ported to compile with PBDLL61. IDE was inspired from the PBNOTE sample included with
+the Powerbasic PBDLL5 package. Over the course of time it has been tweaked, modified
+and updated as I learned and struggled with API programming. The application also
+contains considerable code modified or derived from postings by various authors and
+appearing in the Powerbasic forums. My grateful acknowledgement and appreciation is
+hereby offered to those contributors. Where possible, (meaning when I could remember or
+find it), I have included credit to the original authors within their respective source
+code. While this application has come a long way, there is certainly much that could be
+improved. The majority of the functionality offered by IDE is self-explanatory. The notes
+listed below provide some clarification and rationale for a few of its features. Like
+other amateur programmers, as well as some professional, I never seem to get around to
+writing spiffy help files.
+
+No significant problems associated with Windows 95, 98 or ME have been experienced.
+However, limited or no testing has been performed in Windows NT/2K/XP or in a network
+environment.
+
+=======
+License
+=======
+This package is released under the terms and conditions of the "Artistic License", a
+copy of which is included with the package as the file LICENSE.TXT.
+
+Products and company names mentioned herein may be the trademarks of their respective
+owners.
+
+============
+Installation
+============
+The files listed below comprise the standard IDE package and are required to all reside
+in the same directory or folder for IDE to properly operate.
+
+   IDE.EXE
+   CMAX20.DLL
+   All files with .rwd extensions
+   CREDITS.TXT
+   LICENSE.TXT
+
+All other files are the complete SDK style source code, support files and graphics
+necessary to recreate or modify IDE with the PBDLL6x compiler.
+
+=======
+Startup
+=======
+IDE reads the registry each time it starts to determine what PB products are installed
+and loads the appropriate PB keywords files. Keyword files are expected to reside in the
+same folder with IDE. Reserved words are held in *.rwd files named for their respective
+PB products, PBDLL50, PBDLL60, etc. These are standard text files and may easily be
+edited to add or modify reserved words. The order and case in which the keywords appear
+in the file is unimportant. However, each keyword must be separated from the next with
+the | character(ASCI 124). Syntax support is also provided for resource (*.rc) files,
+(see resource.rwd).
+
+IDE is a single instance application. Any attempt to invoke another instance will be
+ignored.
+
+===============
+The IDE Display
+===============
+IDE was designed primarily as a full screen application. It appears to work best that
+way. However, it may be resized if that is your preference. The last window size and
+position is saved on exit and restored the next time IDE starts. The names of open files
+appear in a tab control running from left to right just below the toolbar. Click the tab
+to activate the respective file. Each tab also contains an icon indicating its modified
+state. Red = modified, green = unchanged. Right click on a file tab to see extended
+information for that file.
+
+The IDE status bar is divided into 5 parts. The first pane serves multiple duties.
+   * Displays additional information for any highlighted menu item.
+   * The PB error description for an unsuccessful compilation.
+   * The value and RGB components for the last color selected.
+
+The second part indicates the row and column position of the cursor within the selected
+file. The third part indicates the current text mode status, either INS for insert
+characters or OVR for overwrite. The last status bar pane displays an icon and name
+for any open project.
+
+The drop down list appearing in the right hand portion of the toolbar contains the names
+of any PB or resource procedures in the active file. PB procedures may be shown with or
+without their respective parameters. (see IDE Options/EDIT). The listing control may
+be widened by double clicking the word "Procedures" or dragging the left edge toward the
+left with your mouse.
+
+==============
+File Functions
+==============
+Provides access to all the usual file functions; New, Open, Save, Save As, Close, etc.
+You may also elect to print the current file to your default printer with several
+definable options.
+
+   Print Using color, if applicable
+   Print 'page # of #' at the bottom of each page
+   Print date and time at top of each page
+   Surround text with a border
+   Print the selection rather than entire file
+
+A list of recently opened files which may be opened in IDE by selecting.
+
+=======
+Editing
+=======
+IDE uses the freeware Codemax editing control. The various Codemax editing options
+available may be modified via right clicking within the edit control or with
+the Edit/Editing Options menu item. The Codemax control supports a rich set of
+features including;
+   Syntax highlighting
+   Bookmarks
+   Color and font selection
+   Search and replace, globally or by selection
+   Split screen editing
+   Line numbering
+   Column selection
+   Multiple language syntax support
+
+See the appendix below for a listing of Codemax keyboard and mouse hotkeys. While the
+original author, Barry Allyn, has discontinued support for the CodeMax control. It is
+currently listed and available, with C++ source, at http://www.sourceforge.com. Codemax
+is subject to the terms and conditions of use you will find there. The file codemax.inc
+contains a conversion of the original C++ header file for use with Powerbasic.
+
+The Editing menu provides most common word processing type functions such as undo, redo,
+cut, copy paste, etc. This menu additionally supports search and search/replace
+functions, bookmarks and goto which allows you to go to a specified line within the
+current file.
+
+====
+View
+====
+There are two viewing options. The first changes the appearance of toolbar buttons
+from flat, the default, to raised. The second option invokes the standard Windows
+file properties dialog for the current file.
+
+========
+Projects
+========
+IDE supports projects. Projects are a group of related files; basic source (bas),
+include files (inc), resource files (rc), etc. and various settings such as project
+name, current version, the flavor of PB compiler. Project files are loaded with the
+cursor position within each file restored as well as any bookmarks. Projects may be
+created, opened(activated) or edited via the projects submenu. Additionally, you may
+create a new project that includes all the currently open files. IDE supports up to 50
+files open or in a project.
+
+===
+Run
+===
+IDE offers various options for building and/or running source code or projects.
+   * Make File/Project - invokes the IDE rudimentary make facility for the current file
+     or project. (see IDE Options/Make). This includes building any resource file as
+     well as passing the file/project to the PB Compiler.
+   * Compile - Passes the current file to the PB Compiler.
+   * Run Executable - This bypasses any compilation and attempts to run the executable
+     application represented by the current source file.
+   * Build & Run - Compiles the current source file and runs the resulting application.
+   * Command Line - Provides the ability to enter optional parameters that will be
+     passed to the application when it is run.
+
+======
+Macros
+======
+Up to 9 optional keyboard macros whose contents may be inserted into the active file
+at the current cursor location. These macros may be called from the menu or by
+pressing the Ctrl key and one of the number keys from 1 to 9. (see IDE Options/Macros)
+
+=====
+Tools
+=====
+The Tool menu allows you to add external executable applications that may be invoked
+from within IDE. Settings for these tools are created through Tool/Options menu and
+selecting Tools on the tabbed options dialog. (see IDE Options). IDE also has two built
+in tools. A color picker and a Character selector. The color picker will optionally 
+insert the selected color into the active file at the current cursor in the format 
+RGB(xxx,xxx,xxx). As well as displaying the last selected color in the first pane of the 
+status bar. The character selector displays the full ANSI character set in both decimal 
+and hex using the current editing font. Pressing the Insert button inserts the selected 
+character into the active file.
+
+Also in the Tool menu is a formatting option. This is an elementary attempt to clean up 
+the look of my basic source code. Essentially, it parses the active basic source file for
+consistent indenting and word spacing. While the PB compilers could care less, I find that;
+
+   CreateFont(0 - PointSize, 0, 0, 0, %FW_NORMAL, 0, 0, 0, _
+
+is much easier to read than;
+
+   CreateFont(0-PointSize,0,0,0,%FW_NORMAL,0,0,0, _
+
+And that in-line comments seem clearer if they all appear in the same column.
+
+The Create Declares File tool simply creates a separate file with a INC extension that
+consists of all the procedure declarations for the active source file. Any existing
+include file may be optionally overwritten.
+
+Any of these built-in tools my be superceded by equivalent tools of your own or others.
+(see IDE Options/EDIT)
+
+===========
+IDE Options
+===========
+The majority of optional user settings, with the exception of Codemax edit options, appear
+in the tabbed dialog invoked via the toolbar or Tools/Options menu.
+
+   PB - This is the first tab and shows all the available PB compilers and program
+   locations as read from the system registry at start up. You may select which of the
+   PB compilers will be considered the default, the location of the optional Windows
+   win32.hlp file, and the normal PB compiler settings for backup, log file, etc.
+
+   EDIT - This dialog allows you to define what file extensions IDE will consider as
+   PB source code. IDE uses these file extensions to determine when to apply such things
+   as colored syntax and capitalization as well as what type of files to display in open
+   and save file dialogs. Other available options include automatically loading the last
+   edited file when IDE starts, the number of recently opened files that will appear in
+   the Files menu (up to 10 with a default of 4) and the format for PB procedures appearing
+   in the drop down listing of the main IDE window. Normally, the name of the procedure and
+   all its declared parameters will be displayed. You may elect to display only the name
+   of the procedure. In the case of resource, *.RC, type files, the IDE displays the names
+   of dialogs, version info, menus or rcdata contained in the resource file. A checkbox to
+   indicate whether IDE should set a bookmark to the source line where the PB compiler found
+   an error. The number of spaces represented by a tab, from 2 to 10 spaces, with a default
+   of 3. IDE can offer support, via the CodeMax control, for the syntax of several other 
+   programming languages. To include this support, check the box for the respective 
+   language.
+
+   PRINT - These are the default options passed to the Codemax edit control when requesting
+   a file be printed. They may be over ridden at the time of printing.
+
+   FORMAT - Defined here are the settings used for formatting the appearance of a basic
+   source code file. (also see Tools)
+
+   MACROS - Up to 9 keyboard macros may be defined here. Each macro can be up to 255
+   characters long and consist of any character that can be typed at the keyboard. A
+   individual macro may be inserted in the active file at the current cursor position
+   by pressing the Ctrl key in combination with a number key from 1 TO 9 or by the
+   Macro menu.
+
+   TOOLS - Here are displayed and defined external applications that may be invoked 
+   through IDE. Each tool consists of a user defined tool name, the complete path and file 
+   specification for the program and any optional parameters to be passed. To modify an 
+   existing tool entry, simply double click on the listed tool and it will be loaded into 
+   the editing section. Examples of such tools include the terrific POFFS program from 
+   Borje Hagsten, your favorite dialog editor, a hex editor, etc. These user tools can be 
+   called by pressing the F10 function key, selecting a tool from then list and choosing 
+   to pass the active file to the tool or not.
+
+   FILE ASSOCIATIONS - Listed here are the file extensions previously defined under EDIT
+   that IDE considers as source code files. Also displayed is the file type description
+   and default application used by Windows. By pressing the Change button, files of the
+   selected extension will opened with IDE.
+   ************************************************************************************
+   ******              THIS OPTION CHANGES YOUR SYSTEM REGISTRY                  ******
+   ************************************************************************************
+
+   Make - Provides a primitive make facility that is based on the execution of a batch
+   file. The batch file, [sourcename].BAT, is expected to be in the same folder with the
+   source. If a project is open, the batch file is assumed or created with same name as
+   the primary file. If no project is open, the batch file assumes the same name as the
+   active file. If no batch file is found, a template based on the current PB compiler is
+   loaded. If found, the existing batch file will be loaded. Either result is presented in
+   the editing portion of the dialog. This option assumes a familiarity with batch file
+   commands, construction and usage.
+
+All of the settings used by IDE are maintained in a standard Windows INI type file
+cleverly named IDE.INI. Except where specifically indicated, IDE makes no entries or
+changes to your system registry.
+
+====
+Help
+====
+The F1 function key invokes context sensitive help based on the word at the cursor
+position.
+   * If a PB keyword, the PBxxx.HLP file, expected to be in the BIN folder of the
+     currently selected PB compiler, is called.
+   * If the active file is a resource, *.RC, the RC.HLP file, again, expected to be
+     in the BIN folder of the selected PB compiler, is called.
+   * Lastly, the Windows help file WIN32.HLP pointed to by the IDE, Options, PB,
+     configuration tab is called.
+Help for the various flavors of installed PB compilers is also available directly via
+the help menu.
+
+===================================[ APPENDIX ]=====================================
+
+CodeMax Mouse Action:
+--------------------
+L-Button click over text                     Changes the caret position
+R-Button click                               Displays the right click menu
+L-Button down on selection, and drag         Moves text
+Ctrl + L-Button down on selection, and drag  Copies text
+L-Button click over left margin              Selects line
+L-Button click over left margin, and drag    Selects multiple lines
+Alt + L-Button down, and drag                Select columns of text
+L-Button double click over text              Select word under cursor
+Spin IntelliMouse mouse wheel                Scroll the window vertically
+Single click IntelliMouse mouse wheel        Select the word under the cursor
+Double click IntelliMouse mouse wheel        Select the line under the cursor
+Click and drag splitter bar                  Splits window into multiple views
+                                             or adjust current splitter position
+Double click splitter bar                    Splits window in half into multiple
+                                             views or unsplits window if already split
+
+CodeMax Command Keystroke:
+-------------------------
+BookmarkNext                                 F2
+BookmarkPrev                                 Shift + F2
+BookmarkToggle                               Control + F2
+CharLeft                                     Left
+CharLeftExtend                               Shift + Left
+CharRight                                    Right
+CharRightExtend                              Shift + Right
+Copy                                         Control + C
+Copy                                         Control + Insert
+Cut                                          Shift + Delete
+Cut                                          Control + X
+CutSelection                                 Control + Alt + W
+Delete                                       Delete
+DeleteBack                                   Backspace
+DocumentEnd                                  Control + End
+DocumentEndExtend                            Control + Shift + End
+DocumentStart                                Control + Home
+DocumentStartExtend                          Control + Shift + Home
+Find                                         Alt + F3
+Find                                         Control + F
+FindNext                                     F3
+FindNextWord                                 Control + F3
+FindPrev                                     Shift + F3
+FindPrevWord                                 Control + Shift + F3
+FindReplace                                  Control + Alt + F3
+GoToLine                                     Control + G
+GoToMatchBrace                               Control + ]
+Home                                         Home
+HomeExtend                                   Shift + Home
+IndentSelection                              Tab
+LineCut                                      Control + Y
+LineDown                                     Down
+LineDowNextend                               Shift + Down
+LineEnd                                      End
+LineEndExtend                                Shift + End
+LineOpenAbove                                Control + Shift + N
+LineUp                                       Up
+LineUpExtend                                 Shift + Up
+LowercaseSelection                           Control + U
+PageDown                                     Next
+PageDowNextend                               Shift + Next
+PageUp                                       PRIOR
+PageUpExtend                                 Shift + Prior
+Paste                                        Control + V
+Paste                                        Shift + Insert
+Properties                                   Alt + Enter
+Redo                                         Control + A
+SelectLine                                   Control + Alt + F8
+SelectSwapAnchor                             Control + Shift + X
+SentenceCut                                  Control + Alt + K
+SentenceLeft                                 Control + Alt + Left
+SentenceRight                                Control + Alt + Right
+SetRepeatCount                               Control + R
+TabifySelection                              Control + Shift + T
+ToggleOvertype                               Insert
+ToggleWhitespaceDisplay                      Control + Alt + T
+Undo                                         Control + Z
+Undo                                         Alt + Backspace
+UnindentSelection                            Shift + Tab
+UntabifySelection                            Control + Shift + Space
+UppercaseSelection                           Control + Shift + U
+WindowScrollDown                             Control + Up
+WindowScrollLeft                             Control + PageDown
+WindowScrollUp                               Control + Down
+WordDeleteToEnd                              Control + Delete
+WordDeleteToStart                            Control + Backspace
+WordLeft                                     Control + Left
+WordLeftExtend                               Control + Shift + Left
+WordRight                                    Control + Right
+WordRightExtend                              Control + Shift + Right

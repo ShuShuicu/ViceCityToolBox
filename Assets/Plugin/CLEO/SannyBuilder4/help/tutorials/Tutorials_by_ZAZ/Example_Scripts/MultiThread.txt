@@ -1,0 +1,32 @@
+{$CLEO .s}
+:MultiThread
+if
+0@ == 0
+else_jump @MultiThread_20
+
+thread 'MULTHRD'
+0A92: create_custom_thread "MultiThread.cs" 1 2 3 4 
+
+    while true
+    wait 0
+    03F0: enable_text_draw 1  
+    045A: draw_text_1number 100.0 100.0 GXT 'NUMBER' number 0@ 
+    end 
+
+
+:MultiThread_20// second thread
+if
+0@ == 1
+then
+    03A4: name_thread 'SECONDT'
+
+    while true
+        wait 0
+        03F0: enable_text_draw 1  
+        045A: draw_text_1number 150.0 120.0 GXT 'NUMBER' number 0@
+        045A: draw_text_1number 160.0 120.0 GXT 'NUMBER' number 1@ 
+        045A: draw_text_1number 170.0 120.0 GXT 'NUMBER' number 2@
+        045A: draw_text_1number 180.0 120.0 GXT 'NUMBER' number 3@ 
+    end
+end
+0A93: end_custom_thread

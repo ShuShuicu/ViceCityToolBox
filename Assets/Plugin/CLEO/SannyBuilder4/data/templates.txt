@@ -1,0 +1,88 @@
+if=IF..THEN statement
+=if
+=	|
+=then
+=	
+=end // if
+
+ifelse=IF..THEN..ELSE statement
+=if
+=	|
+=then
+=	
+=else
+=	
+=end // if
+
+for=FOR statement
+=for | =  to  // step 1
+=	
+=end // for
+
+while=WHILE statement
+=while |
+=	
+=end // while
+
+wtrue=WHILE TRUE loop
+=while true
+=	wait 0
+=
+=	|
+=end // while true
+
+wgosub=WHILE GOSUB loop
+=while gosub |
+=	wait 0
+=
+=	
+=end // while gosub
+
+repeat=REPEAT statement
+=repeat
+=	
+=until | // repeat
+
+rfalse=REPEAT UNTIL FALSE loop
+=repeat
+=	wait 0
+=
+=	|
+=until false // repeat until false
+
+rgosub=REPEAT UNTIL GOSUB loop
+=repeat
+=	wait 0
+=
+=	
+=until gosub | // repeat until gosub
+
+const=Constants declaration
+=const
+= |
+=end // const
+
+var=Variables declaration
+=var
+= |
+=end // var
+
+hex=HEX..END construct
+=hex
+= |
+=end // hex
+
+switch=SWITCH..CASE..END construct
+=switch |
+=	case
+=
+=	case
+=
+=	default
+=
+=end // switch
+
+function=function
+=function |
+=
+=end

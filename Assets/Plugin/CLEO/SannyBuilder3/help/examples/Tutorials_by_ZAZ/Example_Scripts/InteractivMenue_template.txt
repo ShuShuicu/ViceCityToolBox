@@ -1,0 +1,118 @@
+{$CLEO .cs}
+:MENUE_AND_JUMPTABLE_TEMPLATE
+03A4: name_thread 'MENUEJP'
+
+const  
+L_PANEL_VAR = 0@
+L_ACTIVE_ROW_VAR = 1@
+L_PANEL_IS_SHOWN_VAR = 2@
+end
+
+while true
+wait 0
+    if
+        0256:   player $PLAYER_CHAR defined
+    then
+            if
+                L_PANEL_IS_SHOWN_VAR  == 0
+            then    
+                    if  and
+                        00E1:   key_pressed  0  9//--- key = GROUP_CONTROL_BWD
+                        80DF:   not actor $PLAYER_ACTOR driving 
+                    then
+                        gosub @MENU_1
+                    end
+            else// if menue is shown, if L_PANEL_IS_SHOWN_VAR  == 1
+                    if
+                        00E1:   key_pressed  0  16//--- key = Ped SPRINT
+                    then
+                        gosub @Selection_1
+                    end
+                    if
+                        00E1:   key_pressed  0  15//--- key = Enter/Exit
+                    then
+                        gosub @Remove_panel
+                    end
+            end
+    else//if player dies or gets arrested
+            if
+                L_PANEL_IS_SHOWN_VAR  == 1
+            then
+                gosub @Remove_panel//if player dies or gets arrested while meue is shown
+            end    
+    end
+end
+
+:MENU_1
+08D4: L_PANEL_VAR = create_panel_with_title 'CHEAT7' position  340.0  120.0 width  240.0 columns  1 interactive  1 background  1 alignment  0
+08DB: set_panel L_PANEL_VAR column 0 header 'PLA_19' data 'DEBW1' 'DEBW2' 'DEBW3' 'DEBW4' 'DEBW5' 'DEBW6' 'DEBW7' 'DEBW8' 'DEBW9' 'DEBW10' 'DEBW11' 'DEBW12'
+L_PANEL_IS_SHOWN_VAR = 1
+return
+
+:Remove_panel
+08DA: remove_panel L_PANEL_VAR
+L_PANEL_IS_SHOWN_VAR = 0   
+return
+
+
+:Selection_1
+08D7: L_ACTIVE_ROW_VAR = panel L_PANEL_VAR active_row
+0871: init_jump_table L_ACTIVE_ROW_VAR total_jumps  12  0 @Sel_T00 jumps  0 @Sel_T01  1 @Sel_T11  2 @Sel_T22  3 @Sel_T33  4 @Sel_T44  5 @Sel_T55 6 @Sel_T66
+0872: jump_table_jumps  7 @Sel_T77  8 @Sel_T88  9 @Sel_T99  10 @Sel_T101  11 @Sel_T111  -1 @Sel_T00  -1 @Sel_T00  -1 @Sel_T00  -1 @Sel_T00
+
+:Sel_T00// here goes the code if the value of the variable not exist in the jumptable
+00BA: text_styled 'fem_off'  1000 ms  4
+wait 1000
+jump @Sel_EXIT
+
+:Sel_T01
+set_weather  0// = Extra Sunny LA
+jump @Sel_EXIT
+
+:Sel_T11
+set_weather  1// = Sunny LA
+jump @Sel_EXIT
+
+:Sel_T22
+set_weather  2// = Sunny LA
+jump @Sel_EXIT
+
+:Sel_T33
+set_weather  3// = Sunny Smog LA
+jump @Sel_EXIT
+
+:Sel_T44
+set_weather  4// = Cloudy LA
+jump @Sel_EXIT
+
+:Sel_T55
+set_weather  5// = Sunny SF
+jump @Sel_EXIT
+
+:Sel_T66
+set_weather  6// = Extra Sunny SF
+jump @Sel_EXIT
+
+:Sel_T77
+set_weather  7// = Cloudy SF
+jump @Sel_EXIT
+
+:Sel_T88
+set_weather  8// = Rainy SF
+jump @Sel_EXIT
+
+:Sel_T99
+set_weather  9// = Foggy SF
+jump @Sel_EXIT
+
+:Sel_T101
+set_weather  10// = Sunny LV
+jump @Sel_EXIT
+
+:Sel_T111
+set_weather  11// Extra Sunny LV
+jump @Sel_EXIT
+
+:Sel_EXIT
+return
+

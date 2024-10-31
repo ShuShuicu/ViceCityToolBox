@@ -1,0 +1,71 @@
+
+The Grand Theft Auto III mission script compiler
+and decompiler is built into the mission builder.
+
+The Grand Theft Auto III mission script was decoded
+by people on http://www.gtaforums.com and people on
+IRC in an open debate.
+
+I started decoding the mission script using a
+hexadecimal editor in a "trial and error" manner.
+I posted my findings on http://www.gtaforums.com in
+the "my work in cracking the mission script..." post.
+I found that the mission script was made up of 4
+segments, the first segments with zeros, the second
+segment with object definitions, the third with mission
+pointers and the 4th had most of the the mission script
+code. I also posted that the mission script was probably
+compiled from a line based text source made up by what
+I defined at that time as "command codes" and parameters.
+
+Mattj posted his findings later. This post was
+more detailed and accurate than mine. I continued
+working and posted my finding in my first posted thread.
+The work continued in this very simple trial and error
+manner and the "official" knowledge about the mission
+script grew bigger as more people joined in.
+
+Later, more skilled people joined and disassemblers was
+used. The decoding got very accurate at this point and
+gequinn started working on a decompiler for the mission
+script. The work was moved to a lesser open debate on
+IRC to make it "cleaner" and more efficient. I didn't
+feel like spending all day on IRC and I couldn't keep up
+with those people that were much more skilled than me,
+so I stopped working on decoding the mission script at
+that time. At some time after this, I asked gequinn
+if I could help him with anything related to his work
+on his decompiler. He asked me to find out how the
+second segment objects was accessed. I found out how
+and wrote a mission objects editor that could move
+mission script objects like doors and gates.
+
+When the mission script was near completely decoded,
+lots of mission script compilers and decompilers was
+written. No compilers could recompiled the entire
+mission script at this time. Later, complete mission
+editors was written.
+
+As far as I know, Dans mission editor and my mission
+builder are the only two fully functional mission
+script editor available to the public right now. I wrote
+the mission builder because I wanted a mission editor
+that was based on gequinn's first decompiler. My mission
+builders are totally based on gequinn's 'scm.ini' file.
+
+For the legal stuff, the gta 3 license says something
+like the owner of the game can modify any files in the
+game except for the 'gta3.exe' file and other
+executable files. The gta 3 mission script file can't
+run on its own in any operating system, so I guess the
+mission script file in not an executable file. The 
+license also says that if a file is modified, it still
+belongs to Rockstar and no modified file or 3rd party
+tools developed to modify any of these files can be sold
+for profit. Because if this, my mission builders will
+always be free and I will never make any money on the
+mission script files it can compile. The mission builder
+is, as far as I know, not illegal in any way.
+
+I take no responsibility for others use of the mission
+builder in any way. Use it at your own risk.

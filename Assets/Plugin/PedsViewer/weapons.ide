@@ -1,0 +1,41 @@
+objs
+301, brassknuckle, brassknuckle, 1, 300, 128
+302, screwdriver, screwdriver, 1, 300, 128
+303, golfclub, golfclub, 1, 300, 128
+304, nitestick, nitestick, 1, 300, 128
+305, knifecur, knifecur, 1, 300, 128
+306, bat, bat, 1, 300, 128
+307, hammer, hammer, 1, 300, 128
+308, cleaver, cleaver, 1, 300, 128
+309, machete, machete, 1, 300, 128
+310, katana, katana, 1, 300, 128
+311, chnsaw, chnsaw, 1, 300, 128
+312, grenade, grenade, 1, 300, 128
+313, bomb, bomb, 1, 300, 128
+314, teargas, teargas, 1, 300, 128
+315, molotov, molotov, 1, 300, 128
+316, missile, missile, 1, 300, 128
+317, colt45, colt45, 1, 300, 128
+318, python, python, 1, 300, 128
+319, chromegun, chromegun, 1, 300, 128
+320, shotgspa, shotgspa, 1, 300, 128
+321, buddyshot, buddyshot, 1, 300, 128
+322, tec9, tec9, 1, 300, 128
+323, uzi, uzi, 1, 300, 128
+324, ingramsl, ingramsl, 1, 300, 128
+325, mp5lng, mp5lng, 1, 300, 128
+326, m4, m4, 1, 300, 128
+327, ruger, ruger, 1, 300, 128
+328, rocketla, rocketla, 1, 300, 128
+329, flame, flame, 1, 300, 128
+330, M60, M60, 1, 300, 128
+331, minigun, minigun, 1, 300, 128
+332, sniper, sniper, 1, 300, 128
+333, laser, laser, 1, 300, 128
+end
+tobj
+end
+path
+end
+2dfx
+end

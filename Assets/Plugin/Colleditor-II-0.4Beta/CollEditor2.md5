@@ -1,0 +1,16 @@
+; Using hkSFV on 12.28.2005 at 19:11:04
+; http://www.big-o-software.com
+;
+;/----
+;       381952 19:10.56 2005-12-28 CollEditor2.exe
+;         4373 18:33.57 2005-12-28 ReadMe.txt
+;         5995 02:24.30 2005-08-12 materials.ini
+;         3838 21:15.29 2005-08-20 sample_new.cst
+;          496 01:16.36 2005-08-20 sample_old.cst
+;\----
+;
+0ff41edcff5ad1c7ad600f7da83159f2 *CollEditor2.exe
+85c2e19cb6994b40fd8a264b3d215088 *ReadMe.txt
+b1718190bb0953ddbcc27bb5e961a5c0 *materials.ini
+54797c6a77dd05aaa9441db777ce1834 *sample_new.cst
+f67cdd54ebdcfd3593c4340e5b7f08ae *sample_old.cst
