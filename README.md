@@ -16,6 +16,9 @@
 ---
 
 ### 更新日志
+#### 1.4
+ - Updatable Version
+
 #### 1.3
  - Updatable Author
 
